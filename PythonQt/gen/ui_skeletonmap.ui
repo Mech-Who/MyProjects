@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SkeletonMapping</class>
+ <widget class="QDialog" name="SkeletonMapping">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="middleSkeletonLabel">
+     <property name="text">
+      <string>中间骨骼</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="bindButton">
+     <property name="text">
+      <string>绑定</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="QTableWidget" name="middleSkeletonTableWidget">
+     <row>
+      <property name="text">
+       <string>Neck</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Chest</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Spine</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Hips</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>LeftUpperLeg</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>LeftLowerLeg</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>RightUpperLeg</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>RightLowerLeg</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>LeftFoot</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>RightFoot</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>LeftUpperArm</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>LeftLowerArm</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>RightUpperArm</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>RightLowerArm</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>LeftHand</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>RightHand</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>模型绑定骨骼</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>fx</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>fy</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>fz</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLabel" name="modelSkeletonLabel">
+     <property name="text">
+      <string>模型骨骼</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="4" colspan="2">
+    <widget class="QTreeWidget" name="modelSkeletonTreeWidget">
+     <column>
+      <property name="text">
+       <string>模型骨骼</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

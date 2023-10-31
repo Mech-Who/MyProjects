@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetItem</class>
+ <widget class="QMainWindow" name="WidgetItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>210</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2"/>
+  </widget>
+  <action name="actionimport">
+   <property name="icon">
+    <iconset>
+     <normaloff>assets/icon/zengjia.png</normaloff>assets/icon/zengjia.png</iconset>
+   </property>
+   <property name="text">
+    <string>导入模型</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

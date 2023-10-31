@@ -1,0 +1,1394 @@
+LMatrix4f GLTF_created_0_rootJoint {
+  LMatrix4f GLTF_created_0_rootJoint_7 {
+    LMatrix4f Fredina Armature_rootJoint_3_8 {
+      LMatrix4f Root_Fredina_Armature_4_9 {
+        LMatrix4f Spine_Fredina_Armature_5_10 {
+          LMatrix4f Spine_1_Fredina_Armature_6_11 {
+            LMatrix4f Neck_Fredina_Armature_7_12 {
+              LMatrix4f Head_Fredina_Armature_8_13 {
+                LMatrix4f Eye.R_Fredina_Armature_9_14
+                LMatrix4f Eye.L_Fredina_Armature_10_15
+                LMatrix4f Bang.R_Fredina_Armature_11_16
+                LMatrix4f Bang1.R_Fredina_Armature_12_17
+                LMatrix4f HairBack.R_Fredina_Armature_13_18
+                LMatrix4f HairBack1.R_Fredina_Armature_14_19
+                LMatrix4f HairBack2.R_Fredina_Armature_15_20
+                LMatrix4f Ear.R_Fredina_Armature_16_21 {
+                  LMatrix4f Ear1.R_Fredina_Armature_17_22
+                }
+                LMatrix4f Bang.L_Fredina_Armature_18_23
+                LMatrix4f Bang1.L_Fredina_Armature_19_24
+                LMatrix4f HairBack.L_Fredina_Armature_20_25
+                LMatrix4f HairBack1.L_Fredina_Armature_21_26
+                LMatrix4f HairBack2.L_Fredina_Armature_22_27
+                LMatrix4f Ear.L_Fredina_Armature_23_28 {
+                  LMatrix4f Ear1.L_Fredina_Armature_24_29
+                }
+                LMatrix4f Hair1_Fredina_Armature_25_30
+                LMatrix4f Hair2_Fredina_Armature_26_31
+                LMatrix4f Hair3_Fredina_Armature_27_32
+                LMatrix4f Hair4_Fredina_Armature_28_33
+                LMatrix4f Hat_Fredina_Armature_29_34
+                LMatrix4f Hair5_Fredina_Armature_30_35
+                LMatrix4f Hair6_Fredina_Armature_31_36
+                LMatrix4f Hair7_Fredina_Armature_32_37
+                LMatrix4f Hair7.001_Fredina_Armature_33_38
+                LMatrix4f HairSide1_Fredina_Armature_34_39
+                LMatrix4f HairSide2_Fredina_Armature_35_40
+              }
+              LMatrix4f Tie.R_Fredina_Armature_36_41
+              LMatrix4f TieBottom.R_Fredina_Armature_37_42
+              LMatrix4f Tie.L_Fredina_Armature_38_43
+              LMatrix4f TieBottom.L_Fredina_Armature_39_44
+            }
+            LMatrix4f Shoulder.R_Fredina_Armature_40_45 {
+              LMatrix4f Upperarm.R_Fredina_Armature_41_46 {
+                LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+                  LMatrix4f Hand.R_Fredina_Armature_43_48 {
+                    LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+                      LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+                        LMatrix4f Thumb2.R_Fredina_Armature_46_51
+                      }
+                    }
+                    LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+                      LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+                        LMatrix4f Pointer2.R_Fredina_Armature_49_54
+                      }
+                    }
+                    LMatrix4f Middle.R_Fredina_Armature_50_55 {
+                      LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+                        LMatrix4f Middle2.R_Fredina_Armature_52_57
+                      }
+                    }
+                    LMatrix4f Ring.R_Fredina_Armature_53_58 {
+                      LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+                        LMatrix4f Ring2.R_Fredina_Armature_55_60
+                      }
+                    }
+                    LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+                      LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+                        LMatrix4f Pinky2.R_Fredina_Armature_58_63
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            LMatrix4f Breast.R_Fredina_Armature_59_64 {
+              LMatrix4f Breast1.R_Fredina_Armature_60_65 {
+                LMatrix4f Breast2.R_Fredina_Armature_61_66
+              }
+            }
+            LMatrix4f Shoulder.L_Fredina_Armature_62_67 {
+              LMatrix4f Upperarm.L_Fredina_Armature_63_68 {
+                LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+                  LMatrix4f Hand.L_Fredina_Armature_65_70 {
+                    LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+                      LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+                        LMatrix4f Thumb2.L_Fredina_Armature_68_73
+                      }
+                    }
+                    LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+                      LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+                        LMatrix4f Pointer2.L_Fredina_Armature_71_76
+                      }
+                    }
+                    LMatrix4f Middle.L_Fredina_Armature_72_77 {
+                      LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+                        LMatrix4f Middle2.L_Fredina_Armature_74_79
+                      }
+                    }
+                    LMatrix4f Ring.L_Fredina_Armature_75_80 {
+                      LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+                        LMatrix4f Ring2.L_Fredina_Armature_77_82
+                      }
+                    }
+                    LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+                      LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+                        LMatrix4f Pinky2.L_Fredina_Armature_80_85
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            LMatrix4f Breast.L_Fredina_Armature_81_86 {
+              LMatrix4f Breast1.L_Fredina_Armature_82_87 {
+                LMatrix4f Breast2.L_Fredina_Armature_83_88
+              }
+            }
+          }
+        }
+        LMatrix4f Thigh.R_Fredina_Armature_84_89 {
+          LMatrix4f Calf.R_Fredina_Armature_85_90 {
+            LMatrix4f Foot.R_Fredina_Armature_86_91 {
+              LMatrix4f Toe.R_Fredina_Armature_87_92
+            }
+          }
+          LMatrix4f ThighJig.R_Fredina_Armature_88_93
+        }
+        LMatrix4f Butt.R_Fredina_Armature_89_94
+        LMatrix4f Tail_Fredina_Armature_90_95 {
+          LMatrix4f Tail1_Fredina_Armature_91_96
+        }
+        LMatrix4f Thigh.L_Fredina_Armature_92_97 {
+          LMatrix4f Calf.L_Fredina_Armature_93_98 {
+            LMatrix4f Foot.L_Fredina_Armature_94_99 {
+              LMatrix4f Toe.L_Fredina_Armature_95_100
+            }
+          }
+          LMatrix4f ThighJig.L_Fredina_Armature_96_101
+        }
+        LMatrix4f Butt.L_Fredina_Armature_97_102
+      }
+    }
+  }
+}
+
+LMatrix4f GLTF_created_0_rootJoint_7 {
+  LMatrix4f Fredina Armature_rootJoint_3_8 {
+    LMatrix4f Root_Fredina_Armature_4_9 {
+      LMatrix4f Spine_Fredina_Armature_5_10 {
+        LMatrix4f Spine_1_Fredina_Armature_6_11 {
+          LMatrix4f Neck_Fredina_Armature_7_12 {
+            LMatrix4f Head_Fredina_Armature_8_13 {
+              LMatrix4f Eye.R_Fredina_Armature_9_14
+              LMatrix4f Eye.L_Fredina_Armature_10_15
+              LMatrix4f Bang.R_Fredina_Armature_11_16
+              LMatrix4f Bang1.R_Fredina_Armature_12_17
+              LMatrix4f HairBack.R_Fredina_Armature_13_18
+              LMatrix4f HairBack1.R_Fredina_Armature_14_19
+              LMatrix4f HairBack2.R_Fredina_Armature_15_20
+              LMatrix4f Ear.R_Fredina_Armature_16_21 {
+                LMatrix4f Ear1.R_Fredina_Armature_17_22
+              }
+              LMatrix4f Bang.L_Fredina_Armature_18_23
+              LMatrix4f Bang1.L_Fredina_Armature_19_24
+              LMatrix4f HairBack.L_Fredina_Armature_20_25
+              LMatrix4f HairBack1.L_Fredina_Armature_21_26
+              LMatrix4f HairBack2.L_Fredina_Armature_22_27
+              LMatrix4f Ear.L_Fredina_Armature_23_28 {
+                LMatrix4f Ear1.L_Fredina_Armature_24_29
+              }
+              LMatrix4f Hair1_Fredina_Armature_25_30
+              LMatrix4f Hair2_Fredina_Armature_26_31
+              LMatrix4f Hair3_Fredina_Armature_27_32
+              LMatrix4f Hair4_Fredina_Armature_28_33
+              LMatrix4f Hat_Fredina_Armature_29_34
+              LMatrix4f Hair5_Fredina_Armature_30_35
+              LMatrix4f Hair6_Fredina_Armature_31_36
+              LMatrix4f Hair7_Fredina_Armature_32_37
+              LMatrix4f Hair7.001_Fredina_Armature_33_38
+              LMatrix4f HairSide1_Fredina_Armature_34_39
+              LMatrix4f HairSide2_Fredina_Armature_35_40
+            }
+            LMatrix4f Tie.R_Fredina_Armature_36_41
+            LMatrix4f TieBottom.R_Fredina_Armature_37_42
+            LMatrix4f Tie.L_Fredina_Armature_38_43
+            LMatrix4f TieBottom.L_Fredina_Armature_39_44
+          }
+          LMatrix4f Shoulder.R_Fredina_Armature_40_45 {
+            LMatrix4f Upperarm.R_Fredina_Armature_41_46 {
+              LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+                LMatrix4f Hand.R_Fredina_Armature_43_48 {
+                  LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+                    LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+                      LMatrix4f Thumb2.R_Fredina_Armature_46_51
+                    }
+                  }
+                  LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+                    LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+                      LMatrix4f Pointer2.R_Fredina_Armature_49_54
+                    }
+                  }
+                  LMatrix4f Middle.R_Fredina_Armature_50_55 {
+                    LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+                      LMatrix4f Middle2.R_Fredina_Armature_52_57
+                    }
+                  }
+                  LMatrix4f Ring.R_Fredina_Armature_53_58 {
+                    LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+                      LMatrix4f Ring2.R_Fredina_Armature_55_60
+                    }
+                  }
+                  LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+                    LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+                      LMatrix4f Pinky2.R_Fredina_Armature_58_63
+                    }
+                  }
+                }
+              }
+            }
+          }
+          LMatrix4f Breast.R_Fredina_Armature_59_64 {
+            LMatrix4f Breast1.R_Fredina_Armature_60_65 {
+              LMatrix4f Breast2.R_Fredina_Armature_61_66
+            }
+          }
+          LMatrix4f Shoulder.L_Fredina_Armature_62_67 {
+            LMatrix4f Upperarm.L_Fredina_Armature_63_68 {
+              LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+                LMatrix4f Hand.L_Fredina_Armature_65_70 {
+                  LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+                    LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+                      LMatrix4f Thumb2.L_Fredina_Armature_68_73
+                    }
+                  }
+                  LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+                    LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+                      LMatrix4f Pointer2.L_Fredina_Armature_71_76
+                    }
+                  }
+                  LMatrix4f Middle.L_Fredina_Armature_72_77 {
+                    LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+                      LMatrix4f Middle2.L_Fredina_Armature_74_79
+                    }
+                  }
+                  LMatrix4f Ring.L_Fredina_Armature_75_80 {
+                    LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+                      LMatrix4f Ring2.L_Fredina_Armature_77_82
+                    }
+                  }
+                  LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+                    LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+                      LMatrix4f Pinky2.L_Fredina_Armature_80_85
+                    }
+                  }
+                }
+              }
+            }
+          }
+          LMatrix4f Breast.L_Fredina_Armature_81_86 {
+            LMatrix4f Breast1.L_Fredina_Armature_82_87 {
+              LMatrix4f Breast2.L_Fredina_Armature_83_88
+            }
+          }
+        }
+      }
+      LMatrix4f Thigh.R_Fredina_Armature_84_89 {
+        LMatrix4f Calf.R_Fredina_Armature_85_90 {
+          LMatrix4f Foot.R_Fredina_Armature_86_91 {
+            LMatrix4f Toe.R_Fredina_Armature_87_92
+          }
+        }
+        LMatrix4f ThighJig.R_Fredina_Armature_88_93
+      }
+      LMatrix4f Butt.R_Fredina_Armature_89_94
+      LMatrix4f Tail_Fredina_Armature_90_95 {
+        LMatrix4f Tail1_Fredina_Armature_91_96
+      }
+      LMatrix4f Thigh.L_Fredina_Armature_92_97 {
+        LMatrix4f Calf.L_Fredina_Armature_93_98 {
+          LMatrix4f Foot.L_Fredina_Armature_94_99 {
+            LMatrix4f Toe.L_Fredina_Armature_95_100
+          }
+        }
+        LMatrix4f ThighJig.L_Fredina_Armature_96_101
+      }
+      LMatrix4f Butt.L_Fredina_Armature_97_102
+    }
+  }
+}
+
+LMatrix4f Fredina Armature_rootJoint_3_8 {
+  LMatrix4f Root_Fredina_Armature_4_9 {
+    LMatrix4f Spine_Fredina_Armature_5_10 {
+      LMatrix4f Spine_1_Fredina_Armature_6_11 {
+        LMatrix4f Neck_Fredina_Armature_7_12 {
+          LMatrix4f Head_Fredina_Armature_8_13 {
+            LMatrix4f Eye.R_Fredina_Armature_9_14
+            LMatrix4f Eye.L_Fredina_Armature_10_15
+            LMatrix4f Bang.R_Fredina_Armature_11_16
+            LMatrix4f Bang1.R_Fredina_Armature_12_17
+            LMatrix4f HairBack.R_Fredina_Armature_13_18
+            LMatrix4f HairBack1.R_Fredina_Armature_14_19
+            LMatrix4f HairBack2.R_Fredina_Armature_15_20
+            LMatrix4f Ear.R_Fredina_Armature_16_21 {
+              LMatrix4f Ear1.R_Fredina_Armature_17_22
+            }
+            LMatrix4f Bang.L_Fredina_Armature_18_23
+            LMatrix4f Bang1.L_Fredina_Armature_19_24
+            LMatrix4f HairBack.L_Fredina_Armature_20_25
+            LMatrix4f HairBack1.L_Fredina_Armature_21_26
+            LMatrix4f HairBack2.L_Fredina_Armature_22_27
+            LMatrix4f Ear.L_Fredina_Armature_23_28 {
+              LMatrix4f Ear1.L_Fredina_Armature_24_29
+            }
+            LMatrix4f Hair1_Fredina_Armature_25_30
+            LMatrix4f Hair2_Fredina_Armature_26_31
+            LMatrix4f Hair3_Fredina_Armature_27_32
+            LMatrix4f Hair4_Fredina_Armature_28_33
+            LMatrix4f Hat_Fredina_Armature_29_34
+            LMatrix4f Hair5_Fredina_Armature_30_35
+            LMatrix4f Hair6_Fredina_Armature_31_36
+            LMatrix4f Hair7_Fredina_Armature_32_37
+            LMatrix4f Hair7.001_Fredina_Armature_33_38
+            LMatrix4f HairSide1_Fredina_Armature_34_39
+            LMatrix4f HairSide2_Fredina_Armature_35_40
+          }
+          LMatrix4f Tie.R_Fredina_Armature_36_41
+          LMatrix4f TieBottom.R_Fredina_Armature_37_42
+          LMatrix4f Tie.L_Fredina_Armature_38_43
+          LMatrix4f TieBottom.L_Fredina_Armature_39_44
+        }
+        LMatrix4f Shoulder.R_Fredina_Armature_40_45 {
+          LMatrix4f Upperarm.R_Fredina_Armature_41_46 {
+            LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+              LMatrix4f Hand.R_Fredina_Armature_43_48 {
+                LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+                  LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+                    LMatrix4f Thumb2.R_Fredina_Armature_46_51
+                  }
+                }
+                LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+                  LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+                    LMatrix4f Pointer2.R_Fredina_Armature_49_54
+                  }
+                }
+                LMatrix4f Middle.R_Fredina_Armature_50_55 {
+                  LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+                    LMatrix4f Middle2.R_Fredina_Armature_52_57
+                  }
+                }
+                LMatrix4f Ring.R_Fredina_Armature_53_58 {
+                  LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+                    LMatrix4f Ring2.R_Fredina_Armature_55_60
+                  }
+                }
+                LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+                  LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+                    LMatrix4f Pinky2.R_Fredina_Armature_58_63
+                  }
+                }
+              }
+            }
+          }
+        }
+        LMatrix4f Breast.R_Fredina_Armature_59_64 {
+          LMatrix4f Breast1.R_Fredina_Armature_60_65 {
+            LMatrix4f Breast2.R_Fredina_Armature_61_66
+          }
+        }
+        LMatrix4f Shoulder.L_Fredina_Armature_62_67 {
+          LMatrix4f Upperarm.L_Fredina_Armature_63_68 {
+            LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+              LMatrix4f Hand.L_Fredina_Armature_65_70 {
+                LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+                  LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+                    LMatrix4f Thumb2.L_Fredina_Armature_68_73
+                  }
+                }
+                LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+                  LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+                    LMatrix4f Pointer2.L_Fredina_Armature_71_76
+                  }
+                }
+                LMatrix4f Middle.L_Fredina_Armature_72_77 {
+                  LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+                    LMatrix4f Middle2.L_Fredina_Armature_74_79
+                  }
+                }
+                LMatrix4f Ring.L_Fredina_Armature_75_80 {
+                  LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+                    LMatrix4f Ring2.L_Fredina_Armature_77_82
+                  }
+                }
+                LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+                  LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+                    LMatrix4f Pinky2.L_Fredina_Armature_80_85
+                  }
+                }
+              }
+            }
+          }
+        }
+        LMatrix4f Breast.L_Fredina_Armature_81_86 {
+          LMatrix4f Breast1.L_Fredina_Armature_82_87 {
+            LMatrix4f Breast2.L_Fredina_Armature_83_88
+          }
+        }
+      }
+    }
+    LMatrix4f Thigh.R_Fredina_Armature_84_89 {
+      LMatrix4f Calf.R_Fredina_Armature_85_90 {
+        LMatrix4f Foot.R_Fredina_Armature_86_91 {
+          LMatrix4f Toe.R_Fredina_Armature_87_92
+        }
+      }
+      LMatrix4f ThighJig.R_Fredina_Armature_88_93
+    }
+    LMatrix4f Butt.R_Fredina_Armature_89_94
+    LMatrix4f Tail_Fredina_Armature_90_95 {
+      LMatrix4f Tail1_Fredina_Armature_91_96
+    }
+    LMatrix4f Thigh.L_Fredina_Armature_92_97 {
+      LMatrix4f Calf.L_Fredina_Armature_93_98 {
+        LMatrix4f Foot.L_Fredina_Armature_94_99 {
+          LMatrix4f Toe.L_Fredina_Armature_95_100
+        }
+      }
+      LMatrix4f ThighJig.L_Fredina_Armature_96_101
+    }
+    LMatrix4f Butt.L_Fredina_Armature_97_102
+  }
+}
+
+LMatrix4f Root_Fredina_Armature_4_9 {
+  LMatrix4f Spine_Fredina_Armature_5_10 {
+    LMatrix4f Spine_1_Fredina_Armature_6_11 {
+      LMatrix4f Neck_Fredina_Armature_7_12 {
+        LMatrix4f Head_Fredina_Armature_8_13 {
+          LMatrix4f Eye.R_Fredina_Armature_9_14
+          LMatrix4f Eye.L_Fredina_Armature_10_15
+          LMatrix4f Bang.R_Fredina_Armature_11_16
+          LMatrix4f Bang1.R_Fredina_Armature_12_17
+          LMatrix4f HairBack.R_Fredina_Armature_13_18
+          LMatrix4f HairBack1.R_Fredina_Armature_14_19
+          LMatrix4f HairBack2.R_Fredina_Armature_15_20
+          LMatrix4f Ear.R_Fredina_Armature_16_21 {
+            LMatrix4f Ear1.R_Fredina_Armature_17_22
+          }
+          LMatrix4f Bang.L_Fredina_Armature_18_23
+          LMatrix4f Bang1.L_Fredina_Armature_19_24
+          LMatrix4f HairBack.L_Fredina_Armature_20_25
+          LMatrix4f HairBack1.L_Fredina_Armature_21_26
+          LMatrix4f HairBack2.L_Fredina_Armature_22_27
+          LMatrix4f Ear.L_Fredina_Armature_23_28 {
+            LMatrix4f Ear1.L_Fredina_Armature_24_29
+          }
+          LMatrix4f Hair1_Fredina_Armature_25_30
+          LMatrix4f Hair2_Fredina_Armature_26_31
+          LMatrix4f Hair3_Fredina_Armature_27_32
+          LMatrix4f Hair4_Fredina_Armature_28_33
+          LMatrix4f Hat_Fredina_Armature_29_34
+          LMatrix4f Hair5_Fredina_Armature_30_35
+          LMatrix4f Hair6_Fredina_Armature_31_36
+          LMatrix4f Hair7_Fredina_Armature_32_37
+          LMatrix4f Hair7.001_Fredina_Armature_33_38
+          LMatrix4f HairSide1_Fredina_Armature_34_39
+          LMatrix4f HairSide2_Fredina_Armature_35_40
+        }
+        LMatrix4f Tie.R_Fredina_Armature_36_41
+        LMatrix4f TieBottom.R_Fredina_Armature_37_42
+        LMatrix4f Tie.L_Fredina_Armature_38_43
+        LMatrix4f TieBottom.L_Fredina_Armature_39_44
+      }
+      LMatrix4f Shoulder.R_Fredina_Armature_40_45 {
+        LMatrix4f Upperarm.R_Fredina_Armature_41_46 {
+          LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+            LMatrix4f Hand.R_Fredina_Armature_43_48 {
+              LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+                LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+                  LMatrix4f Thumb2.R_Fredina_Armature_46_51
+                }
+              }
+              LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+                LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+                  LMatrix4f Pointer2.R_Fredina_Armature_49_54
+                }
+              }
+              LMatrix4f Middle.R_Fredina_Armature_50_55 {
+                LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+                  LMatrix4f Middle2.R_Fredina_Armature_52_57
+                }
+              }
+              LMatrix4f Ring.R_Fredina_Armature_53_58 {
+                LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+                  LMatrix4f Ring2.R_Fredina_Armature_55_60
+                }
+              }
+              LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+                LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+                  LMatrix4f Pinky2.R_Fredina_Armature_58_63
+                }
+              }
+            }
+          }
+        }
+      }
+      LMatrix4f Breast.R_Fredina_Armature_59_64 {
+        LMatrix4f Breast1.R_Fredina_Armature_60_65 {
+          LMatrix4f Breast2.R_Fredina_Armature_61_66
+        }
+      }
+      LMatrix4f Shoulder.L_Fredina_Armature_62_67 {
+        LMatrix4f Upperarm.L_Fredina_Armature_63_68 {
+          LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+            LMatrix4f Hand.L_Fredina_Armature_65_70 {
+              LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+                LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+                  LMatrix4f Thumb2.L_Fredina_Armature_68_73
+                }
+              }
+              LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+                LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+                  LMatrix4f Pointer2.L_Fredina_Armature_71_76
+                }
+              }
+              LMatrix4f Middle.L_Fredina_Armature_72_77 {
+                LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+                  LMatrix4f Middle2.L_Fredina_Armature_74_79
+                }
+              }
+              LMatrix4f Ring.L_Fredina_Armature_75_80 {
+                LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+                  LMatrix4f Ring2.L_Fredina_Armature_77_82
+                }
+              }
+              LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+                LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+                  LMatrix4f Pinky2.L_Fredina_Armature_80_85
+                }
+              }
+            }
+          }
+        }
+      }
+      LMatrix4f Breast.L_Fredina_Armature_81_86 {
+        LMatrix4f Breast1.L_Fredina_Armature_82_87 {
+          LMatrix4f Breast2.L_Fredina_Armature_83_88
+        }
+      }
+    }
+  }
+  LMatrix4f Thigh.R_Fredina_Armature_84_89 {
+    LMatrix4f Calf.R_Fredina_Armature_85_90 {
+      LMatrix4f Foot.R_Fredina_Armature_86_91 {
+        LMatrix4f Toe.R_Fredina_Armature_87_92
+      }
+    }
+    LMatrix4f ThighJig.R_Fredina_Armature_88_93
+  }
+  LMatrix4f Butt.R_Fredina_Armature_89_94
+  LMatrix4f Tail_Fredina_Armature_90_95 {
+    LMatrix4f Tail1_Fredina_Armature_91_96
+  }
+  LMatrix4f Thigh.L_Fredina_Armature_92_97 {
+    LMatrix4f Calf.L_Fredina_Armature_93_98 {
+      LMatrix4f Foot.L_Fredina_Armature_94_99 {
+        LMatrix4f Toe.L_Fredina_Armature_95_100
+      }
+    }
+    LMatrix4f ThighJig.L_Fredina_Armature_96_101
+  }
+  LMatrix4f Butt.L_Fredina_Armature_97_102
+}
+
+LMatrix4f Spine_Fredina_Armature_5_10 {
+  LMatrix4f Spine_1_Fredina_Armature_6_11 {
+    LMatrix4f Neck_Fredina_Armature_7_12 {
+      LMatrix4f Head_Fredina_Armature_8_13 {
+        LMatrix4f Eye.R_Fredina_Armature_9_14
+        LMatrix4f Eye.L_Fredina_Armature_10_15
+        LMatrix4f Bang.R_Fredina_Armature_11_16
+        LMatrix4f Bang1.R_Fredina_Armature_12_17
+        LMatrix4f HairBack.R_Fredina_Armature_13_18
+        LMatrix4f HairBack1.R_Fredina_Armature_14_19
+        LMatrix4f HairBack2.R_Fredina_Armature_15_20
+        LMatrix4f Ear.R_Fredina_Armature_16_21 {
+          LMatrix4f Ear1.R_Fredina_Armature_17_22
+        }
+        LMatrix4f Bang.L_Fredina_Armature_18_23
+        LMatrix4f Bang1.L_Fredina_Armature_19_24
+        LMatrix4f HairBack.L_Fredina_Armature_20_25
+        LMatrix4f HairBack1.L_Fredina_Armature_21_26
+        LMatrix4f HairBack2.L_Fredina_Armature_22_27
+        LMatrix4f Ear.L_Fredina_Armature_23_28 {
+          LMatrix4f Ear1.L_Fredina_Armature_24_29
+        }
+        LMatrix4f Hair1_Fredina_Armature_25_30
+        LMatrix4f Hair2_Fredina_Armature_26_31
+        LMatrix4f Hair3_Fredina_Armature_27_32
+        LMatrix4f Hair4_Fredina_Armature_28_33
+        LMatrix4f Hat_Fredina_Armature_29_34
+        LMatrix4f Hair5_Fredina_Armature_30_35
+        LMatrix4f Hair6_Fredina_Armature_31_36
+        LMatrix4f Hair7_Fredina_Armature_32_37
+        LMatrix4f Hair7.001_Fredina_Armature_33_38
+        LMatrix4f HairSide1_Fredina_Armature_34_39
+        LMatrix4f HairSide2_Fredina_Armature_35_40
+      }
+      LMatrix4f Tie.R_Fredina_Armature_36_41
+      LMatrix4f TieBottom.R_Fredina_Armature_37_42
+      LMatrix4f Tie.L_Fredina_Armature_38_43
+      LMatrix4f TieBottom.L_Fredina_Armature_39_44
+    }
+    LMatrix4f Shoulder.R_Fredina_Armature_40_45 {
+      LMatrix4f Upperarm.R_Fredina_Armature_41_46 {
+        LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+          LMatrix4f Hand.R_Fredina_Armature_43_48 {
+            LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+              LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+                LMatrix4f Thumb2.R_Fredina_Armature_46_51
+              }
+            }
+            LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+              LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+                LMatrix4f Pointer2.R_Fredina_Armature_49_54
+              }
+            }
+            LMatrix4f Middle.R_Fredina_Armature_50_55 {
+              LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+                LMatrix4f Middle2.R_Fredina_Armature_52_57
+              }
+            }
+            LMatrix4f Ring.R_Fredina_Armature_53_58 {
+              LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+                LMatrix4f Ring2.R_Fredina_Armature_55_60
+              }
+            }
+            LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+              LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+                LMatrix4f Pinky2.R_Fredina_Armature_58_63
+              }
+            }
+          }
+        }
+      }
+    }
+    LMatrix4f Breast.R_Fredina_Armature_59_64 {
+      LMatrix4f Breast1.R_Fredina_Armature_60_65 {
+        LMatrix4f Breast2.R_Fredina_Armature_61_66
+      }
+    }
+    LMatrix4f Shoulder.L_Fredina_Armature_62_67 {
+      LMatrix4f Upperarm.L_Fredina_Armature_63_68 {
+        LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+          LMatrix4f Hand.L_Fredina_Armature_65_70 {
+            LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+              LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+                LMatrix4f Thumb2.L_Fredina_Armature_68_73
+              }
+            }
+            LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+              LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+                LMatrix4f Pointer2.L_Fredina_Armature_71_76
+              }
+            }
+            LMatrix4f Middle.L_Fredina_Armature_72_77 {
+              LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+                LMatrix4f Middle2.L_Fredina_Armature_74_79
+              }
+            }
+            LMatrix4f Ring.L_Fredina_Armature_75_80 {
+              LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+                LMatrix4f Ring2.L_Fredina_Armature_77_82
+              }
+            }
+            LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+              LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+                LMatrix4f Pinky2.L_Fredina_Armature_80_85
+              }
+            }
+          }
+        }
+      }
+    }
+    LMatrix4f Breast.L_Fredina_Armature_81_86 {
+      LMatrix4f Breast1.L_Fredina_Armature_82_87 {
+        LMatrix4f Breast2.L_Fredina_Armature_83_88
+      }
+    }
+  }
+}
+
+LMatrix4f Spine_1_Fredina_Armature_6_11 {
+  LMatrix4f Neck_Fredina_Armature_7_12 {
+    LMatrix4f Head_Fredina_Armature_8_13 {
+      LMatrix4f Eye.R_Fredina_Armature_9_14
+      LMatrix4f Eye.L_Fredina_Armature_10_15
+      LMatrix4f Bang.R_Fredina_Armature_11_16
+      LMatrix4f Bang1.R_Fredina_Armature_12_17
+      LMatrix4f HairBack.R_Fredina_Armature_13_18
+      LMatrix4f HairBack1.R_Fredina_Armature_14_19
+      LMatrix4f HairBack2.R_Fredina_Armature_15_20
+      LMatrix4f Ear.R_Fredina_Armature_16_21 {
+        LMatrix4f Ear1.R_Fredina_Armature_17_22
+      }
+      LMatrix4f Bang.L_Fredina_Armature_18_23
+      LMatrix4f Bang1.L_Fredina_Armature_19_24
+      LMatrix4f HairBack.L_Fredina_Armature_20_25
+      LMatrix4f HairBack1.L_Fredina_Armature_21_26
+      LMatrix4f HairBack2.L_Fredina_Armature_22_27
+      LMatrix4f Ear.L_Fredina_Armature_23_28 {
+        LMatrix4f Ear1.L_Fredina_Armature_24_29
+      }
+      LMatrix4f Hair1_Fredina_Armature_25_30
+      LMatrix4f Hair2_Fredina_Armature_26_31
+      LMatrix4f Hair3_Fredina_Armature_27_32
+      LMatrix4f Hair4_Fredina_Armature_28_33
+      LMatrix4f Hat_Fredina_Armature_29_34
+      LMatrix4f Hair5_Fredina_Armature_30_35
+      LMatrix4f Hair6_Fredina_Armature_31_36
+      LMatrix4f Hair7_Fredina_Armature_32_37
+      LMatrix4f Hair7.001_Fredina_Armature_33_38
+      LMatrix4f HairSide1_Fredina_Armature_34_39
+      LMatrix4f HairSide2_Fredina_Armature_35_40
+    }
+    LMatrix4f Tie.R_Fredina_Armature_36_41
+    LMatrix4f TieBottom.R_Fredina_Armature_37_42
+    LMatrix4f Tie.L_Fredina_Armature_38_43
+    LMatrix4f TieBottom.L_Fredina_Armature_39_44
+  }
+  LMatrix4f Shoulder.R_Fredina_Armature_40_45 {
+    LMatrix4f Upperarm.R_Fredina_Armature_41_46 {
+      LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+        LMatrix4f Hand.R_Fredina_Armature_43_48 {
+          LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+            LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+              LMatrix4f Thumb2.R_Fredina_Armature_46_51
+            }
+          }
+          LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+            LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+              LMatrix4f Pointer2.R_Fredina_Armature_49_54
+            }
+          }
+          LMatrix4f Middle.R_Fredina_Armature_50_55 {
+            LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+              LMatrix4f Middle2.R_Fredina_Armature_52_57
+            }
+          }
+          LMatrix4f Ring.R_Fredina_Armature_53_58 {
+            LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+              LMatrix4f Ring2.R_Fredina_Armature_55_60
+            }
+          }
+          LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+            LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+              LMatrix4f Pinky2.R_Fredina_Armature_58_63
+            }
+          }
+        }
+      }
+    }
+  }
+  LMatrix4f Breast.R_Fredina_Armature_59_64 {
+    LMatrix4f Breast1.R_Fredina_Armature_60_65 {
+      LMatrix4f Breast2.R_Fredina_Armature_61_66
+    }
+  }
+  LMatrix4f Shoulder.L_Fredina_Armature_62_67 {
+    LMatrix4f Upperarm.L_Fredina_Armature_63_68 {
+      LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+        LMatrix4f Hand.L_Fredina_Armature_65_70 {
+          LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+            LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+              LMatrix4f Thumb2.L_Fredina_Armature_68_73
+            }
+          }
+          LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+            LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+              LMatrix4f Pointer2.L_Fredina_Armature_71_76
+            }
+          }
+          LMatrix4f Middle.L_Fredina_Armature_72_77 {
+            LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+              LMatrix4f Middle2.L_Fredina_Armature_74_79
+            }
+          }
+          LMatrix4f Ring.L_Fredina_Armature_75_80 {
+            LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+              LMatrix4f Ring2.L_Fredina_Armature_77_82
+            }
+          }
+          LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+            LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+              LMatrix4f Pinky2.L_Fredina_Armature_80_85
+            }
+          }
+        }
+      }
+    }
+  }
+  LMatrix4f Breast.L_Fredina_Armature_81_86 {
+    LMatrix4f Breast1.L_Fredina_Armature_82_87 {
+      LMatrix4f Breast2.L_Fredina_Armature_83_88
+    }
+  }
+}
+
+LMatrix4f Neck_Fredina_Armature_7_12 {
+  LMatrix4f Head_Fredina_Armature_8_13 {
+    LMatrix4f Eye.R_Fredina_Armature_9_14
+    LMatrix4f Eye.L_Fredina_Armature_10_15
+    LMatrix4f Bang.R_Fredina_Armature_11_16
+    LMatrix4f Bang1.R_Fredina_Armature_12_17
+    LMatrix4f HairBack.R_Fredina_Armature_13_18
+    LMatrix4f HairBack1.R_Fredina_Armature_14_19
+    LMatrix4f HairBack2.R_Fredina_Armature_15_20
+    LMatrix4f Ear.R_Fredina_Armature_16_21 {
+      LMatrix4f Ear1.R_Fredina_Armature_17_22
+    }
+    LMatrix4f Bang.L_Fredina_Armature_18_23
+    LMatrix4f Bang1.L_Fredina_Armature_19_24
+    LMatrix4f HairBack.L_Fredina_Armature_20_25
+    LMatrix4f HairBack1.L_Fredina_Armature_21_26
+    LMatrix4f HairBack2.L_Fredina_Armature_22_27
+    LMatrix4f Ear.L_Fredina_Armature_23_28 {
+      LMatrix4f Ear1.L_Fredina_Armature_24_29
+    }
+    LMatrix4f Hair1_Fredina_Armature_25_30
+    LMatrix4f Hair2_Fredina_Armature_26_31
+    LMatrix4f Hair3_Fredina_Armature_27_32
+    LMatrix4f Hair4_Fredina_Armature_28_33
+    LMatrix4f Hat_Fredina_Armature_29_34
+    LMatrix4f Hair5_Fredina_Armature_30_35
+    LMatrix4f Hair6_Fredina_Armature_31_36
+    LMatrix4f Hair7_Fredina_Armature_32_37
+    LMatrix4f Hair7.001_Fredina_Armature_33_38
+    LMatrix4f HairSide1_Fredina_Armature_34_39
+    LMatrix4f HairSide2_Fredina_Armature_35_40
+  }
+  LMatrix4f Tie.R_Fredina_Armature_36_41
+  LMatrix4f TieBottom.R_Fredina_Armature_37_42
+  LMatrix4f Tie.L_Fredina_Armature_38_43
+  LMatrix4f TieBottom.L_Fredina_Armature_39_44
+}
+
+LMatrix4f Head_Fredina_Armature_8_13 {
+  LMatrix4f Eye.R_Fredina_Armature_9_14
+  LMatrix4f Eye.L_Fredina_Armature_10_15
+  LMatrix4f Bang.R_Fredina_Armature_11_16
+  LMatrix4f Bang1.R_Fredina_Armature_12_17
+  LMatrix4f HairBack.R_Fredina_Armature_13_18
+  LMatrix4f HairBack1.R_Fredina_Armature_14_19
+  LMatrix4f HairBack2.R_Fredina_Armature_15_20
+  LMatrix4f Ear.R_Fredina_Armature_16_21 {
+    LMatrix4f Ear1.R_Fredina_Armature_17_22
+  }
+  LMatrix4f Bang.L_Fredina_Armature_18_23
+  LMatrix4f Bang1.L_Fredina_Armature_19_24
+  LMatrix4f HairBack.L_Fredina_Armature_20_25
+  LMatrix4f HairBack1.L_Fredina_Armature_21_26
+  LMatrix4f HairBack2.L_Fredina_Armature_22_27
+  LMatrix4f Ear.L_Fredina_Armature_23_28 {
+    LMatrix4f Ear1.L_Fredina_Armature_24_29
+  }
+  LMatrix4f Hair1_Fredina_Armature_25_30
+  LMatrix4f Hair2_Fredina_Armature_26_31
+  LMatrix4f Hair3_Fredina_Armature_27_32
+  LMatrix4f Hair4_Fredina_Armature_28_33
+  LMatrix4f Hat_Fredina_Armature_29_34
+  LMatrix4f Hair5_Fredina_Armature_30_35
+  LMatrix4f Hair6_Fredina_Armature_31_36
+  LMatrix4f Hair7_Fredina_Armature_32_37
+  LMatrix4f Hair7.001_Fredina_Armature_33_38
+  LMatrix4f HairSide1_Fredina_Armature_34_39
+  LMatrix4f HairSide2_Fredina_Armature_35_40
+}
+
+LMatrix4f Eye.R_Fredina_Armature_9_14
+
+LMatrix4f Eye.L_Fredina_Armature_10_15
+
+LMatrix4f Bang.R_Fredina_Armature_11_16
+
+LMatrix4f Bang1.R_Fredina_Armature_12_17
+
+LMatrix4f HairBack.R_Fredina_Armature_13_18
+
+LMatrix4f HairBack1.R_Fredina_Armature_14_19
+
+LMatrix4f HairBack2.R_Fredina_Armature_15_20
+
+LMatrix4f Ear.R_Fredina_Armature_16_21 {
+  LMatrix4f Ear1.R_Fredina_Armature_17_22
+}
+
+LMatrix4f Ear1.R_Fredina_Armature_17_22
+
+LMatrix4f Bang.L_Fredina_Armature_18_23
+
+LMatrix4f Bang1.L_Fredina_Armature_19_24
+
+LMatrix4f HairBack.L_Fredina_Armature_20_25
+
+LMatrix4f HairBack1.L_Fredina_Armature_21_26
+
+LMatrix4f HairBack2.L_Fredina_Armature_22_27
+
+LMatrix4f Ear.L_Fredina_Armature_23_28 {
+  LMatrix4f Ear1.L_Fredina_Armature_24_29
+}
+
+LMatrix4f Ear1.L_Fredina_Armature_24_29
+
+LMatrix4f Hair1_Fredina_Armature_25_30
+
+LMatrix4f Hair2_Fredina_Armature_26_31
+
+LMatrix4f Hair3_Fredina_Armature_27_32
+
+LMatrix4f Hair4_Fredina_Armature_28_33
+
+LMatrix4f Hat_Fredina_Armature_29_34
+
+LMatrix4f Hair5_Fredina_Armature_30_35
+
+LMatrix4f Hair6_Fredina_Armature_31_36
+
+LMatrix4f Hair7_Fredina_Armature_32_37
+
+LMatrix4f Hair7.001_Fredina_Armature_33_38
+
+LMatrix4f HairSide1_Fredina_Armature_34_39
+
+LMatrix4f HairSide2_Fredina_Armature_35_40
+
+LMatrix4f Tie.R_Fredina_Armature_36_41
+
+LMatrix4f TieBottom.R_Fredina_Armature_37_42
+
+LMatrix4f Tie.L_Fredina_Armature_38_43
+
+LMatrix4f TieBottom.L_Fredina_Armature_39_44
+
+LMatrix4f Shoulder.R_Fredina_Armature_40_45 {
+  LMatrix4f Upperarm.R_Fredina_Armature_41_46 {
+    LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+      LMatrix4f Hand.R_Fredina_Armature_43_48 {
+        LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+          LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+            LMatrix4f Thumb2.R_Fredina_Armature_46_51
+          }
+        }
+        LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+          LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+            LMatrix4f Pointer2.R_Fredina_Armature_49_54
+          }
+        }
+        LMatrix4f Middle.R_Fredina_Armature_50_55 {
+          LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+            LMatrix4f Middle2.R_Fredina_Armature_52_57
+          }
+        }
+        LMatrix4f Ring.R_Fredina_Armature_53_58 {
+          LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+            LMatrix4f Ring2.R_Fredina_Armature_55_60
+          }
+        }
+        LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+          LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+            LMatrix4f Pinky2.R_Fredina_Armature_58_63
+          }
+        }
+      }
+    }
+  }
+}
+
+LMatrix4f Upperarm.R_Fredina_Armature_41_46 {
+  LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+    LMatrix4f Hand.R_Fredina_Armature_43_48 {
+      LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+        LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+          LMatrix4f Thumb2.R_Fredina_Armature_46_51
+        }
+      }
+      LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+        LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+          LMatrix4f Pointer2.R_Fredina_Armature_49_54
+        }
+      }
+      LMatrix4f Middle.R_Fredina_Armature_50_55 {
+        LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+          LMatrix4f Middle2.R_Fredina_Armature_52_57
+        }
+      }
+      LMatrix4f Ring.R_Fredina_Armature_53_58 {
+        LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+          LMatrix4f Ring2.R_Fredina_Armature_55_60
+        }
+      }
+      LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+        LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+          LMatrix4f Pinky2.R_Fredina_Armature_58_63
+        }
+      }
+    }
+  }
+}
+
+LMatrix4f Forearm.R_Fredina_Armature_42_47 {
+  LMatrix4f Hand.R_Fredina_Armature_43_48 {
+    LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+      LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+        LMatrix4f Thumb2.R_Fredina_Armature_46_51
+      }
+    }
+    LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+      LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+        LMatrix4f Pointer2.R_Fredina_Armature_49_54
+      }
+    }
+    LMatrix4f Middle.R_Fredina_Armature_50_55 {
+      LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+        LMatrix4f Middle2.R_Fredina_Armature_52_57
+      }
+    }
+    LMatrix4f Ring.R_Fredina_Armature_53_58 {
+      LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+        LMatrix4f Ring2.R_Fredina_Armature_55_60
+      }
+    }
+    LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+      LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+        LMatrix4f Pinky2.R_Fredina_Armature_58_63
+      }
+    }
+  }
+}
+
+LMatrix4f Hand.R_Fredina_Armature_43_48 {
+  LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+    LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+      LMatrix4f Thumb2.R_Fredina_Armature_46_51
+    }
+  }
+  LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+    LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+      LMatrix4f Pointer2.R_Fredina_Armature_49_54
+    }
+  }
+  LMatrix4f Middle.R_Fredina_Armature_50_55 {
+    LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+      LMatrix4f Middle2.R_Fredina_Armature_52_57
+    }
+  }
+  LMatrix4f Ring.R_Fredina_Armature_53_58 {
+    LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+      LMatrix4f Ring2.R_Fredina_Armature_55_60
+    }
+  }
+  LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+    LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+      LMatrix4f Pinky2.R_Fredina_Armature_58_63
+    }
+  }
+}
+
+LMatrix4f Thumb.R_Fredina_Armature_44_49 {
+  LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+    LMatrix4f Thumb2.R_Fredina_Armature_46_51
+  }
+}
+
+LMatrix4f Thumb1.R_Fredina_Armature_45_50 {
+  LMatrix4f Thumb2.R_Fredina_Armature_46_51
+}
+
+LMatrix4f Thumb2.R_Fredina_Armature_46_51
+
+LMatrix4f Pointer.R_Fredina_Armature_47_52 {
+  LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+    LMatrix4f Pointer2.R_Fredina_Armature_49_54
+  }
+}
+
+LMatrix4f Pointer1.R_Fredina_Armature_48_53 {
+  LMatrix4f Pointer2.R_Fredina_Armature_49_54
+}
+
+LMatrix4f Pointer2.R_Fredina_Armature_49_54
+
+LMatrix4f Middle.R_Fredina_Armature_50_55 {
+  LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+    LMatrix4f Middle2.R_Fredina_Armature_52_57
+  }
+}
+
+LMatrix4f Middle1.R_Fredina_Armature_51_56 {
+  LMatrix4f Middle2.R_Fredina_Armature_52_57
+}
+
+LMatrix4f Middle2.R_Fredina_Armature_52_57
+
+LMatrix4f Ring.R_Fredina_Armature_53_58 {
+  LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+    LMatrix4f Ring2.R_Fredina_Armature_55_60
+  }
+}
+
+LMatrix4f Ring1.R_Fredina_Armature_54_59 {
+  LMatrix4f Ring2.R_Fredina_Armature_55_60
+}
+
+LMatrix4f Ring2.R_Fredina_Armature_55_60
+
+LMatrix4f Pinky.R_Fredina_Armature_56_61 {
+  LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+    LMatrix4f Pinky2.R_Fredina_Armature_58_63
+  }
+}
+
+LMatrix4f Pinky1.R_Fredina_Armature_57_62 {
+  LMatrix4f Pinky2.R_Fredina_Armature_58_63
+}
+
+LMatrix4f Pinky2.R_Fredina_Armature_58_63
+
+LMatrix4f Breast.R_Fredina_Armature_59_64 {
+  LMatrix4f Breast1.R_Fredina_Armature_60_65 {
+    LMatrix4f Breast2.R_Fredina_Armature_61_66
+  }
+}
+
+LMatrix4f Breast1.R_Fredina_Armature_60_65 {
+  LMatrix4f Breast2.R_Fredina_Armature_61_66
+}
+
+LMatrix4f Breast2.R_Fredina_Armature_61_66
+
+LMatrix4f Shoulder.L_Fredina_Armature_62_67 {
+  LMatrix4f Upperarm.L_Fredina_Armature_63_68 {
+    LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+      LMatrix4f Hand.L_Fredina_Armature_65_70 {
+        LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+          LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+            LMatrix4f Thumb2.L_Fredina_Armature_68_73
+          }
+        }
+        LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+          LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+            LMatrix4f Pointer2.L_Fredina_Armature_71_76
+          }
+        }
+        LMatrix4f Middle.L_Fredina_Armature_72_77 {
+          LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+            LMatrix4f Middle2.L_Fredina_Armature_74_79
+          }
+        }
+        LMatrix4f Ring.L_Fredina_Armature_75_80 {
+          LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+            LMatrix4f Ring2.L_Fredina_Armature_77_82
+          }
+        }
+        LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+          LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+            LMatrix4f Pinky2.L_Fredina_Armature_80_85
+          }
+        }
+      }
+    }
+  }
+}
+
+LMatrix4f Upperarm.L_Fredina_Armature_63_68 {
+  LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+    LMatrix4f Hand.L_Fredina_Armature_65_70 {
+      LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+        LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+          LMatrix4f Thumb2.L_Fredina_Armature_68_73
+        }
+      }
+      LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+        LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+          LMatrix4f Pointer2.L_Fredina_Armature_71_76
+        }
+      }
+      LMatrix4f Middle.L_Fredina_Armature_72_77 {
+        LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+          LMatrix4f Middle2.L_Fredina_Armature_74_79
+        }
+      }
+      LMatrix4f Ring.L_Fredina_Armature_75_80 {
+        LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+          LMatrix4f Ring2.L_Fredina_Armature_77_82
+        }
+      }
+      LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+        LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+          LMatrix4f Pinky2.L_Fredina_Armature_80_85
+        }
+      }
+    }
+  }
+}
+
+LMatrix4f Forearm.L_Fredina_Armature_64_69 {
+  LMatrix4f Hand.L_Fredina_Armature_65_70 {
+    LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+      LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+        LMatrix4f Thumb2.L_Fredina_Armature_68_73
+      }
+    }
+    LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+      LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+        LMatrix4f Pointer2.L_Fredina_Armature_71_76
+      }
+    }
+    LMatrix4f Middle.L_Fredina_Armature_72_77 {
+      LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+        LMatrix4f Middle2.L_Fredina_Armature_74_79
+      }
+    }
+    LMatrix4f Ring.L_Fredina_Armature_75_80 {
+      LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+        LMatrix4f Ring2.L_Fredina_Armature_77_82
+      }
+    }
+    LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+      LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+        LMatrix4f Pinky2.L_Fredina_Armature_80_85
+      }
+    }
+  }
+}
+
+LMatrix4f Hand.L_Fredina_Armature_65_70 {
+  LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+    LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+      LMatrix4f Thumb2.L_Fredina_Armature_68_73
+    }
+  }
+  LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+    LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+      LMatrix4f Pointer2.L_Fredina_Armature_71_76
+    }
+  }
+  LMatrix4f Middle.L_Fredina_Armature_72_77 {
+    LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+      LMatrix4f Middle2.L_Fredina_Armature_74_79
+    }
+  }
+  LMatrix4f Ring.L_Fredina_Armature_75_80 {
+    LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+      LMatrix4f Ring2.L_Fredina_Armature_77_82
+    }
+  }
+  LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+    LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+      LMatrix4f Pinky2.L_Fredina_Armature_80_85
+    }
+  }
+}
+
+LMatrix4f Thumb.L_Fredina_Armature_66_71 {
+  LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+    LMatrix4f Thumb2.L_Fredina_Armature_68_73
+  }
+}
+
+LMatrix4f Thumb1.L_Fredina_Armature_67_72 {
+  LMatrix4f Thumb2.L_Fredina_Armature_68_73
+}
+
+LMatrix4f Thumb2.L_Fredina_Armature_68_73
+
+LMatrix4f Pointer.L_Fredina_Armature_69_74 {
+  LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+    LMatrix4f Pointer2.L_Fredina_Armature_71_76
+  }
+}
+
+LMatrix4f Pointer1.L_Fredina_Armature_70_75 {
+  LMatrix4f Pointer2.L_Fredina_Armature_71_76
+}
+
+LMatrix4f Pointer2.L_Fredina_Armature_71_76
+
+LMatrix4f Middle.L_Fredina_Armature_72_77 {
+  LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+    LMatrix4f Middle2.L_Fredina_Armature_74_79
+  }
+}
+
+LMatrix4f Middle1.L_Fredina_Armature_73_78 {
+  LMatrix4f Middle2.L_Fredina_Armature_74_79
+}
+
+LMatrix4f Middle2.L_Fredina_Armature_74_79
+
+LMatrix4f Ring.L_Fredina_Armature_75_80 {
+  LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+    LMatrix4f Ring2.L_Fredina_Armature_77_82
+  }
+}
+
+LMatrix4f Ring1.L_Fredina_Armature_76_81 {
+  LMatrix4f Ring2.L_Fredina_Armature_77_82
+}
+
+LMatrix4f Ring2.L_Fredina_Armature_77_82
+
+LMatrix4f Pinky.L_Fredina_Armature_78_83 {
+  LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+    LMatrix4f Pinky2.L_Fredina_Armature_80_85
+  }
+}
+
+LMatrix4f Pinky1.L_Fredina_Armature_79_84 {
+  LMatrix4f Pinky2.L_Fredina_Armature_80_85
+}
+
+LMatrix4f Pinky2.L_Fredina_Armature_80_85
+
+LMatrix4f Breast.L_Fredina_Armature_81_86 {
+  LMatrix4f Breast1.L_Fredina_Armature_82_87 {
+    LMatrix4f Breast2.L_Fredina_Armature_83_88
+  }
+}
+
+LMatrix4f Breast1.L_Fredina_Armature_82_87 {
+  LMatrix4f Breast2.L_Fredina_Armature_83_88
+}
+
+LMatrix4f Breast2.L_Fredina_Armature_83_88
+
+LMatrix4f Thigh.R_Fredina_Armature_84_89 {
+  LMatrix4f Calf.R_Fredina_Armature_85_90 {
+    LMatrix4f Foot.R_Fredina_Armature_86_91 {
+      LMatrix4f Toe.R_Fredina_Armature_87_92
+    }
+  }
+  LMatrix4f ThighJig.R_Fredina_Armature_88_93
+}
+
+LMatrix4f Calf.R_Fredina_Armature_85_90 {
+  LMatrix4f Foot.R_Fredina_Armature_86_91 {
+    LMatrix4f Toe.R_Fredina_Armature_87_92
+  }
+}
+
+LMatrix4f Foot.R_Fredina_Armature_86_91 {
+  LMatrix4f Toe.R_Fredina_Armature_87_92
+}
+
+LMatrix4f Toe.R_Fredina_Armature_87_92
+
+LMatrix4f ThighJig.R_Fredina_Armature_88_93
+
+LMatrix4f Butt.R_Fredina_Armature_89_94
+
+LMatrix4f Tail_Fredina_Armature_90_95 {
+  LMatrix4f Tail1_Fredina_Armature_91_96
+}
+
+LMatrix4f Tail1_Fredina_Armature_91_96
+
+LMatrix4f Thigh.L_Fredina_Armature_92_97 {
+  LMatrix4f Calf.L_Fredina_Armature_93_98 {
+    LMatrix4f Foot.L_Fredina_Armature_94_99 {
+      LMatrix4f Toe.L_Fredina_Armature_95_100
+    }
+  }
+  LMatrix4f ThighJig.L_Fredina_Armature_96_101
+}
+
+LMatrix4f Calf.L_Fredina_Armature_93_98 {
+  LMatrix4f Foot.L_Fredina_Armature_94_99 {
+    LMatrix4f Toe.L_Fredina_Armature_95_100
+  }
+}
+
+LMatrix4f Foot.L_Fredina_Armature_94_99 {
+  LMatrix4f Toe.L_Fredina_Armature_95_100
+}
+
+LMatrix4f Toe.L_Fredina_Armature_95_100
+
+LMatrix4f ThighJig.L_Fredina_Armature_96_101
+
+LMatrix4f Butt.L_Fredina_Armature_97_102
+

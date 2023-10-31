@@ -1,0 +1,579 @@
+{
+  "import_model_count": 4,
+  "import_models": [
+    {
+      "accessories": {},
+      "binding": {},
+      "name": "bdd",
+      "path": "./models/bdd.glb",
+      "picBg": "D:/Task/Projects/Myself/GraduationDesign/PythonQt/models/img/IceDwen.png",
+      "type": "glb"
+    },
+    {
+      "accessories": {},
+      "binding": {},
+      "name": "fddn",
+      "path": "./models/fredina_nude.glb",
+      "picBg": "D:/Downloads/BaiduNetdiskDownload/fddn/Fredina_nude.jpg",
+      "type": "glb"
+    }
+  ],
+  "system_models": [
+    {
+      "accessories": {
+        "Coats": "Bodybaked_5",
+        "Shoes": "Bodybaked_4"
+      },
+      "isBuildIn": true,
+      "name": "Ashtra2",
+      "path": "./models/test.vrm",
+      "picBg": "./models/img/Ashtra.png",
+      "type": "vrm"
+    },
+    {
+      "accessories": {
+        "Pants": "Bottoms",
+        "Shoes": "Shoes"
+      },
+      "isBuildIn": true,
+      "name": "Hanako",
+      "path": "./models/three-vrm-girl.vrm",
+      "picBg": "./models/img/Hanako.png",
+      "type": "vrm"
+    },
+    {
+      "accessories": {
+        "Cats_ear": "Cats_ear",
+        "Coats": "Hoodie",
+        "Pants": "Pants",
+        "Ponytail": "Ponytail",
+        "Shoes": "Shoes",
+        "Tail": "Tail"
+      },
+      "isBuildIn": true,
+      "name": "VAL",
+      "path": "./models/VAL.vrm",
+      "picBg": "./models/img/VAL.png",
+      "type": "vrm"
+    },
+    {
+      "accessories": {
+        "Bow tie": "Bodybaked_2",
+        "Pants": "Bodybaked_1",
+        "Shoes": "Bodybaked_3"
+      },
+      "isBuildIn": true,
+      "name": "Sendagaya",
+      "path": "./models/shibu_sendagaya.vrm",
+      "picBg": "./models/img/Sendagaya.png",
+      "type": "vrm"
+    },
+    {
+      "accessories": {
+        "Coats": "Bodybaked_4",
+        "Pants": "Bodybaked_5",
+        "Shoes": "Bodybaked_6"
+      },
+      "isBuildIn": true,
+      "name": "Amaris",
+      "path": "./models/SampleA.vrm",
+      "picBg": "./models/img/Amaris.png",
+      "type": "vrm"
+    },
+    {
+      "accessories": {
+        "Pants": "Bodybaked_5",
+        "Shoes": "Bodybaked_6"
+      },
+      "isBuildIn": true,
+      "name": "Natsuki",
+      "path": "./models/SampleB.vrm",
+      "picBg": "./models/img/Natsuki.png",
+      "type": "vrm"
+    },
+    {
+      "binding": {
+        "Chest": {
+          "name": "None"
+        },
+        "Hips": {
+          "func": {
+            "fx": "-x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Root"
+        },
+        "LeftLowerArm": {
+          "name": "None"
+        },
+        "LeftLowerLeg": {
+          "name": "None"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "Arm-L"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "Leg-L"
+        },
+        "Neck": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "Head"
+        },
+        "RightLowerArm": {
+          "name": "None"
+        },
+        "RightLowerLeg": {
+          "name": "None"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "Arm-R"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "Leg-R"
+        },
+        "Spine": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "Body"
+        }
+      },
+      "cameraPosition": {
+        "x": 3.0126227828289567,
+        "y": 8.282267793698868,
+        "z": -4.256228398745762
+      },
+      "cameraRotation": {
+        "x": 3.0748256625542174,
+        "y": 0.6561263858143132,
+        "z": -3.1008232787709633
+      },
+      "cameraTarget": {
+        "x": 0.5,
+        "y": 8.5,
+        "z": -1
+      },
+      "init": {
+        "LeftUpperArm": {
+          "x": 0.02513,
+          "y": 0.10053,
+          "z": -1.52053
+        },
+        "RightUpperArm": {
+          "x": 0.02513,
+          "y": 0.17592,
+          "z": 1.57079
+        }
+      },
+      "isBuildIn": true,
+      "name": "IceDwen",
+      "path": "./models/bdd.glb",
+      "picBg": "./models/img/IceDwen.png",
+      "type": "glb"
+    },
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigSpine2"
+        },
+        "Hips": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigHips"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "z",
+            "fy": "-x",
+            "fz": "-y"
+          },
+          "name": "mixamorigLeftForeArm"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigLeftLeg"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "z",
+            "fy": "-x",
+            "fz": "-y"
+          },
+          "name": "mixamorigLeftArm"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigLeftUpLeg"
+        },
+        "Neck": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigNeck"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "-z",
+            "fy": "x",
+            "fz": "-y"
+          },
+          "name": "mixamorigRightForeArm"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigRightLeg"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "-z",
+            "fy": "x",
+            "fz": "-y"
+          },
+          "name": "mixamorigRightArm"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigRightUpLeg"
+        },
+        "Spine": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigSpine"
+        }
+      },
+      "isBuildIn": true,
+      "name": "Mousey",
+      "path": "./models/Mousey.fbx",
+      "picBg": "./models/img/Mousey.png",
+      "type": "fbx"
+    },
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigSpine2"
+        },
+        "Hips": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigHips"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "z",
+            "fy": "-x",
+            "fz": "-y"
+          },
+          "name": "mixamorigLeftForeArm"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigLeftLeg"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "z",
+            "fy": "-x",
+            "fz": "-y"
+          },
+          "name": "mixamorigLeftArm"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigLeftUpLeg"
+        },
+        "Neck": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigNeck"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "-z",
+            "fy": "x",
+            "fz": "-y"
+          },
+          "name": "mixamorigRightForeArm"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigRightLeg"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "-z",
+            "fy": "x",
+            "fz": "-y"
+          },
+          "name": "mixamorigRightArm"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigRightUpLeg"
+        },
+        "Spine": {
+          "func": {
+            "fx": "-x",
+            "fy": "y",
+            "fz": "-z"
+          },
+          "name": "mixamorigSpine"
+        }
+      },
+      "isBuildIn": true,
+      "name": "Vanguard",
+      "path": "./models/Vanguard.fbx",
+      "picBg": "./models/img/Vanguard.png",
+      "type": "fbx"
+    },
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Spine_1_Fredina_Armature_6_11"
+        },
+        "Hips": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Root_Fredina_Armature_4_9"
+        },
+        "LeftFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Foot.L_Fredina_Armature_94_99"
+        },
+        "LeftHand": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Hand.L_Fredina_Armature_65_70"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Forearm.L_Fredina_Armature_64_69"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Calf.L_Fredina_Armature_93_98"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Upperarm.L_Fredina_Armature_63_68"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Thigh.L_Fredina_Armature_92_97"
+        },
+        "Neck": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Neck_Fredina_Armature_7_12"
+        },
+        "RightFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Foot.R_Fredina_Armature_86_91"
+        },
+        "RightHand": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Hand.R_Fredina_Armature_43_48"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Forearm.R_Fredina_Armature_42_47"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Calf.R_Fredina_Armature_85_90"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Upperarm.R_Fredina_Armature_41_46"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Thigh.R_Fredina_Armature_84_89"
+        },
+        "Spine": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Spine_Fredina_Armature_5_10"
+        }
+      },
+      "cameraPosition": {
+        "x": 0,
+        "y": -10,
+        "z": 2
+      },
+      "cameraRotation": {
+        "x": 0,
+        "y": -180,
+        "z": 0
+      },
+      "cameraTarget": {
+        "x": 0.04,
+        "y": 0.04,
+        "z": 0.04
+      },
+      "init": {
+        "LeftUpperArm": {
+          "x": 0.02513,
+          "y": 0.10053,
+          "z": -1.52053
+        },
+        "RightUpperArm": {
+          "x": 0.02513,
+          "y": 0.17592,
+          "z": 1.57079
+        }
+      },
+      "isBuildIn": true,
+      "name": "fredina_nude",
+      "path": "./models/fredina_nude.glb",
+      "picBg": "./models/img/Fredina_nude.jpg",
+      "type": "glb"
+    }
+  ]
+}

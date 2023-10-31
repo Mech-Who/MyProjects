@@ -1,0 +1,7 @@
+{
+  "supported_format": ["glb", "gltf", "egg"],
+  "supported_video_format": ["mp4", "avi", "webm"],
+  "default_close": true,
+  "model_save": "./models/",
+  "draw_landmarks": true
+}

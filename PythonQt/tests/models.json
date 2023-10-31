@@ -1,0 +1,218 @@
+{
+  "import_model_count": 2,
+  "import_models": [
+    {
+      "accessories": {},
+      "binding": {},
+      "cameraPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraTarget": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "name": "bdd",
+      "path": "./models/bdd.glb",
+      "picBg": "D:/Task/Projects/Myself/GraduationDesign/PythonQt/models/img/IceDwen.png",
+      "type": "glb"
+    },
+    {
+      "accessories": {},
+      "binding": {},
+      "cameraPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraTarget": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "name": "fddn",
+      "path": "./models/fredina_nude.glb",
+      "picBg": "D:/Downloads/BaiduNetdiskDownload/fddn/Fredina_nude.jpg",
+      "type": "glb"
+    }
+  ],
+  "system_models": [
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Spine_1_Fredina_Armature_6_11"
+        },
+        "Hips": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Root_Fredina_Armature_4_9"
+        },
+        "LeftFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Foot.L_Fredina_Armature_94_99"
+        },
+        "LeftHand": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Hand.L_Fredina_Armature_65_70"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Forearm.L_Fredina_Armature_64_69"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Calf.L_Fredina_Armature_93_98"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Upperarm.L_Fredina_Armature_63_68"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Thigh.L_Fredina_Armature_92_97"
+        },
+        "Neck": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Neck_Fredina_Armature_7_12"
+        },
+        "RightFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Foot.R_Fredina_Armature_86_91"
+        },
+        "RightHand": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Hand.R_Fredina_Armature_43_48"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Forearm.R_Fredina_Armature_42_47"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Calf.R_Fredina_Armature_85_90"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Upperarm.R_Fredina_Armature_41_46"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Thigh.R_Fredina_Armature_84_89"
+        },
+        "Spine": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Spine_Fredina_Armature_5_10"
+        }
+      },
+      "cameraPosition": {
+        "x": 0,
+        "y": 0,
+        "z": -30
+      },
+      "cameraRotation": {
+        "x": 0,
+        "y": 180,
+        "z": 0
+      },
+      "cameraTarget": {
+        "x": 0.015,
+        "y": 0.015,
+        "z": 0.015
+      },
+      "init": {
+        "LeftUpperArm": {
+          "x": 0.02513,
+          "y": 0.10053,
+          "z": -1.52053
+        },
+        "RightUpperArm": {
+          "x": 0.02513,
+          "y": 0.17592,
+          "z": 1.57079
+        }
+      },
+      "isBuildIn": true,
+      "name": "fredina_nude",
+      "path": "../models/fredina_nude.glb",
+      "picBg": "../models/img/Fredina_nude.jpg",
+      "type": "glb"
+    }
+  ]
+}

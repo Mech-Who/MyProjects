@@ -1,0 +1,39 @@
+<!DOCTYPE RCC>
+<RCC>
+    <qresource prefix="icons">
+        <file alias="save">assets/icon/save.ico</file>
+        <file alias="help">assets/icon/bangzhu.png</file>
+        <file alias="edit">assets/icon/bianji.png</file>
+        <file alias="play">assets/icon/bofang.png</file>
+        <file alias="menu_list">assets/icon/caidanliebiao.png</file>
+        <file alias="more">assets/icon/gengduo.png</file>
+        <file alias="reduce">assets/icon/jianshao.png</file>
+        <file alias="warning">assets/icon/jingti.png</file>
+        <file alias="authentication">assets/icon/renzheng.png</file>
+        <file alias="filter">assets/icon/shaixuan.png</file>
+        <file alias="upload">assets/icon/shangchuan.png</file>
+        <file alias="last_page">assets/icon/shangyiye.png</file>
+        <file alias="setting">assets/icon/shezhi.png</file>
+        <file alias="favourite">assets/icon/shoucang.png</file>
+        <file alias="home_page">assets/icon/shouye.png</file>
+        <file alias="home_page">assets/icon/shouye.png</file>
+        <file alias="search">assets/icon/sousuo.png</file>
+        <file alias="tips">assets/icon/tishi.png</file>
+        <file alias="exit">assets/icon/tuichu.png</file>
+        <file alias="position">assets/icon/weizhi.png</file>
+        <file alias="folder">assets/icon/wenjianjia.png</file>
+        <file alias="mine">assets/icon/wode.png</file>
+        <file alias="next_page">assets/icon/xiayiye.png</file>
+        <file alias="download">assets/icon/xiazai.png</file>
+        <file alias="mail">assets/icon/youjian.png</file>
+        <file alias="suspend">assets/icon/zanting.png</file>
+        <file alias="increase">assets/icon/zengjia.png</file>
+        <file alias="unfold">assets/icon/zhankai.png</file>
+    </qresource>
+    <qresource prefix="texts">
+        <file alias="README">README.md</file>
+    </qresource>
+    <qresource lang="zh">
+        <file alias="README">README_en.md</file>
+    </qresource>
+</RCC>

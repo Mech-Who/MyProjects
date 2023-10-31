@@ -1,0 +1,165 @@
+absl-py==1.4.0
+aiohttp==3.8.4
+aiosignal==1.3.1
+altgraph==0.17.3
+anaconda-client==1.11.1
+anaconda-project @ file:///C:/Windows/TEMP/abs_91fu4tfkih/croots/recipe/anaconda-project_1660339890874/work
+APScheduler==3.10.1
+astroid==2.15.3
+async-timeout==4.0.2
+attrs @ file:///C:/b/abs_09s3y775ra/croot/attrs_1668696195628/work
+auto-py-to-exe==2.33.0
+autopep8==2.0.2
+Babel==2.12.1
+backports.functools-lru-cache @ file:///tmp/build/80754af9/backports.functools_lru_cache_1618170165463/work
+backports.tempfile @ file:///home/linux1/recipes/ci/backports.tempfile_1610991236607/work
+backports.weakref==1.0.post1
+beautifulsoup4 @ file:///C:/b/abs_88es_4clol/croot/beautifulsoup4-split_1680589977077/work
+boltons @ file:///C:/b/abs_707eo7c09t/croot/boltons_1677628723117/work
+bottle==0.12.25
+bottle-websocket==0.2.9
+brotlipy==0.7.0
+certifi==2022.12.7
+cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
+chardet @ file:///C:/ci_310/chardet_1642114080098/work
+charset-normalizer==3.1.0
+click @ file:///C:/ci/click_1646056762388/work
+clyent==1.2.2
+colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
+conda==23.3.1
+conda-build==3.23.3
+conda-content-trust @ file:///C:/Windows/TEMP/abs_4589313d-fc62-4ccc-81c0-b801b4449e833j1ajrwu/croots/recipe/conda-content-trust_1658126379362/work
+conda-pack @ file:///tmp/build/80754af9/conda-pack_1611163042455/work
+conda-package-handling @ file:///C:/b/abs_fcga8w0uem/croot/conda-package-handling_1672865024290/work
+conda-token @ file:///Users/paulyim/miniconda3/envs/c3i/conda-bld/conda-token_1662660369760/work
+conda-verify==3.4.2
+conda_package_streaming @ file:///C:/b/abs_0e5n5hdal3/croot/conda-package-streaming_1670508162902/work
+contourpy==1.0.7
+cryptography @ file:///C:/b/abs_8ecplyc3n2/croot/cryptography_1677533105000/work
+cx-Freeze==6.5.3
+cycler==0.11.0
+dataclasses-json==0.5.7
+defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
+dill==0.3.6
+distlib==0.3.6
+docopt==0.6.2
+docstring-to-markdown==0.12
+docxcompose==1.4.0
+docxtpl==0.16.6
+Eel==0.16.0
+et-xmlfile==1.1.0
+fastjsonschema @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_ebruxzvd08/croots/recipe/python-fastjsonschema_1661376484940/work
+filelock @ file:///C:/b/abs_c7yrhs9uz2/croot/filelock_1672387617533/work
+flake8==6.0.0
+flatbuffers==23.3.3
+fonttools==4.39.3
+frozenlist==1.3.3
+future @ file:///C:/b/abs_3dcibf18zi/croot/future_1677599891380/work
+gevent==22.10.2
+gevent-websocket==0.10.1
+glob2 @ file:///home/linux1/recipes/ci/glob2_1610991677669/work
+gltflib==1.0.13
+idna==3.4
+importlib-metadata==6.4.1
+isort==5.12.0
+jedi==0.18.2
+Jinja2 @ file:///C:/b/abs_7cdis66kl9/croot/jinja2_1666908141852/work
+jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
+jsonpointer==2.1
+jsonschema @ file:///C:/b/abs_6ccs97j_l8/croot/jsonschema_1676558690963/work
+jupyter_core @ file:///C:/b/abs_9d0ttho3bs/croot/jupyter_core_1679906581955/work
+khl.py==0.3.16
+kiwisolver==1.4.4
+lazy-object-proxy==1.9.0
+libarchive-c @ file:///tmp/build/80754af9/python-libarchive-c_1617780486945/work
+lxml==4.9.2
+MarkupSafe @ file:///C:/ci/markupsafe_1654508036328/work
+marshmallow==3.19.0
+marshmallow-enum==1.5.1
+matplotlib==3.7.1
+mccabe==0.7.0
+mediapipe==0.9.2.1
+menuinst @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_455sf5o0ct/croots/recipe/menuinst_1661805970842/work
+multidict==6.0.4
+mypy-extensions==1.0.0
+nbformat @ file:///C:/b/abs_85_3g7dkt4/croot/nbformat_1670352343720/work
+numpy==1.24.2
+opencv-python==4.5.5.64
+openpyxl==3.1.2
+packaging @ file:///C:/b/abs_ed_kb9w6g4/croot/packaging_1678965418855/work
+Panda3D==1.10.11
+parso==0.8.3
+pefile==2023.2.7
+Pillow==9.5.0
+pipreqs==0.4.12
+pkginfo @ file:///C:/b/abs_d18srtr68x/croot/pkginfo_1679431192239/work
+platformdirs @ file:///C:/b/abs_73cc5cz_1u/croots/recipe/platformdirs_1662711386458/work
+pluggy @ file:///C:/ci/pluggy_1648042746254/work
+protobuf==3.20.3
+psutil @ file:///C:/Windows/Temp/abs_b2c2fd7f-9fd5-4756-95ea-8aed74d0039flsd9qufz/croots/recipe/psutil_1656431277748/work
+pycodestyle==2.10.0
+pycosat @ file:///C:/b/abs_4b1rrw8pn9/croot/pycosat_1666807711599/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pycryptodomex==3.17
+pydocstyle==6.3.0
+pyflakes==3.0.1
+pyinstaller==5.10.0
+pyinstaller-hooks-contrib==2023.2
+pylint==2.17.2
+pyOpenSSL @ file:///C:/b/abs_552w85x1jz/croot/pyopenssl_1677607703691/work
+pyparsing==3.0.9
+pypiwin32==223
+pyquaternion==0.9.9
+pyrsistent @ file:///C:/ci_310/pyrsistent_1642117077485/work
+PySide6==6.5.0
+PySide6-Addons==6.5.0
+PySide6-Essentials==6.5.0
+PySocks @ file:///C:/ci_310/pysocks_1642089375450/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+python-docx==0.8.11
+python-lsp-jsonrpc==1.0.0
+python-lsp-server==1.7.2
+pytoolconfig==1.2.5
+pytz @ file:///C:/b/abs_22fofvpn1x/croot/pytz_1671698059864/work
+pytz-deprecation-shim==0.1.0.post0
+pywin32==305.1
+pywin32-ctypes==0.2.0
+PyYAML @ file:///C:/b/abs_d0g7dqt2xw/croot/pyyaml_1670514768165/work
+requests==2.28.2
+rope==1.7.0
+ruamel-yaml-conda @ file:///C:/b/abs_6ejaexx82s/croot/ruamel_yaml_1667489767827/work
+ruamel.yaml @ file:///C:/b/abs_30ee5qbthd/croot/ruamel.yaml_1666304562000/work
+ruamel.yaml.clib @ file:///C:/b/abs_aarblxbilo/croot/ruamel.yaml.clib_1666302270884/work
+shiboken6==6.5.0
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+snowballstemmer==2.2.0
+soupsieve @ file:///C:/b/abs_a989exj3q6/croot/soupsieve_1680518492466/work
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+tomli==2.0.1
+tomlkit==0.11.7
+toolz @ file:///C:/b/abs_cfvk6rc40d/croot/toolz_1667464080130/work
+tornado @ file:///C:/ci/tornado_1662476985533/work
+tqdm @ file:///C:/b/abs_f76j9hg7pv/croot/tqdm_1679561871187/work
+traitlets @ file:///C:/b/abs_e5m_xjjl94/croot/traitlets_1671143896266/work
+typing-inspect==0.8.0
+typing_extensions==4.5.0
+tzdata==2023.3
+tzlocal==4.3
+ujson==5.7.0
+urllib3==1.26.15
+virtualenv==20.21.0
+whatthepatch==1.0.4
+whichcraft==0.6.1
+win-inet-pton @ file:///C:/ci_310/win_inet_pton_1642658466512/work
+wincertstore==0.2
+wrapt==1.15.0
+yapf==0.32.0
+yarg==0.1.9
+yarl==1.8.2
+zipp==3.15.0
+zope.event==4.6
+zstandard==0.19.0
+
+open3d~=0.17.0
+scipy~=1.10.1
+beeprint~=2.4.10

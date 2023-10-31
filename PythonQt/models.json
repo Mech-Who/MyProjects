@@ -1,0 +1,937 @@
+{
+  "import_model_count": 5,
+  "import_models": [
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "chest_30"
+        },
+        "Hips": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "spine_60"
+        },
+        "LeftFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "foot.L_32"
+        },
+        "LeftHand": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "hand.L_12"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "bicep.L_14"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "shin.L_33"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "shoulder.L_15"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "thigh.L_34"
+        },
+        "Neck": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "neck_1"
+        },
+        "RightFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "foot.R_51"
+        },
+        "RightHand": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "hand.R_26"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "bicep.R_28"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "shin.R_52"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "shoulder.R_29"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "thigh.R_53"
+        },
+        "Spine": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "tummy_31"
+        }
+      },
+      "cameraPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.7
+      },
+      "cameraRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraTarget": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "init": {},
+      "name": "one_punch",
+      "path": "./models/lowpoly_tatsumaki_one_punch_man.glb",
+      "picBg": "D:/Downloads/BaiduNetdiskDownload/一拳超人/LowPoly Tatsumaki (One Punch Man).jpg",
+      "type": "glb"
+    },
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:Spine1"
+        },
+        "Hips": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:Hips"
+        },
+        "LeftFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftFoot"
+        },
+        "LeftHand": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftHand"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftForeArm"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftLeg"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftArm"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftUpLeg"
+        },
+        "Neck": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:Neck"
+        },
+        "RightFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightFoot"
+        },
+        "RightHand": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightHand"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightForeArm"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightLeg"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightArm"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightUpLeg"
+        },
+        "Spine": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:Spine"
+        }
+      },
+      "cameraPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.2
+      },
+      "cameraRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraTarget": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "init": {},
+      "name": "mousey",
+      "path": "./models/mouse.glb",
+      "picBg": "D:/Task/Projects/Myself/GraduationDesign/PythonQt/models/img/Mousey.png",
+      "type": "glb"
+    },
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "Hips": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftFoot": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftHand": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "Neck": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightFoot": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightHand": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "Spine": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        }
+      },
+      "cameraPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraTarget": {
+        "x": 0.2,
+        "y": 0.2,
+        "z": 0.2
+      },
+      "init": {},
+      "name": "ny",
+      "path": "./models/naoya_persona_q.glb",
+      "picBg": "D:/Downloads/BaiduNetdiskDownload/p5r/Naoya Persona Q.jpg",
+      "type": "glb"
+    },
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:Spine1"
+        },
+        "Hips": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:Hips"
+        },
+        "LeftFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftFoot"
+        },
+        "LeftHand": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftHand"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftForeArm"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftLeg"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftArm"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:LeftUpLeg"
+        },
+        "Neck": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:Neck"
+        },
+        "RightFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightFoot"
+        },
+        "RightHand": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightHand"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightForeArm"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightLeg"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightArm"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:RightUpLeg"
+        },
+        "Spine": {
+          "func": {
+            "fx": "x",
+            "fy": "-z",
+            "fz": "y"
+          },
+          "name": "mixamorig:Spine"
+        }
+      },
+      "cameraPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.5
+      },
+      "cameraRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraTarget": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "init": {},
+      "name": "vanguard",
+      "path": "./models/vanguard.glb",
+      "picBg": "D:/Task/Projects/Myself/GraduationDesign/PythonQt/models/img/Vanguard.png",
+      "type": "glb"
+    },
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "Hips": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftFoot": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftHand": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "Neck": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightFoot": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightHand": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        },
+        "Spine": {
+          "func": {
+            "fx": "None",
+            "fy": "None",
+            "fz": "None"
+          },
+          "name": "None"
+        }
+      },
+      "cameraPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "cameraTarget": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "init": {},
+      "name": "ny",
+      "path": "./models/naoya_persona_q.glb",
+      "picBg": "D:/Downloads/BaiduNetdiskDownload/p5r/Naoya Persona Q.jpg",
+      "type": "glb"
+    }
+  ],
+  "system_models": [
+    {
+      "accessories": {},
+      "binding": {
+        "Chest": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Spine_1_Fredina_Armature_6_11"
+        },
+        "Hips": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Root_Fredina_Armature_4_9"
+        },
+        "LeftFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Foot.L_Fredina_Armature_94_99"
+        },
+        "LeftHand": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Hand.L_Fredina_Armature_65_70"
+        },
+        "LeftLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Forearm.L_Fredina_Armature_64_69"
+        },
+        "LeftLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Calf.L_Fredina_Armature_93_98"
+        },
+        "LeftUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Upperarm.L_Fredina_Armature_63_68"
+        },
+        "LeftUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Thigh.L_Fredina_Armature_92_97"
+        },
+        "Neck": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Neck_Fredina_Armature_7_12"
+        },
+        "RightFoot": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Foot.R_Fredina_Armature_86_91"
+        },
+        "RightHand": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Hand.R_Fredina_Armature_43_48"
+        },
+        "RightLowerArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Forearm.R_Fredina_Armature_42_47"
+        },
+        "RightLowerLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Calf.R_Fredina_Armature_85_90"
+        },
+        "RightUpperArm": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Upperarm.R_Fredina_Armature_41_46"
+        },
+        "RightUpperLeg": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Thigh.R_Fredina_Armature_84_89"
+        },
+        "Spine": {
+          "func": {
+            "fx": "x",
+            "fy": "z",
+            "fz": "-y"
+          },
+          "name": "Spine_Fredina_Armature_5_10"
+        }
+      },
+      "cameraPosition": {
+        "x": 0,
+        "y": 0,
+        "z": -5
+      },
+      "cameraRotation": {
+        "x": 0,
+        "y": -90,
+        "z": 0
+      },
+      "cameraTarget": {
+        "x": 0.016,
+        "y": 0.016,
+        "z": 0.016
+      },
+      "init": {
+        "LeftUpperArm": {
+          "x": 0.02513,
+          "y": 0.10053,
+          "z": -1.52053
+        },
+        "RightUpperArm": {
+          "x": 0.02513,
+          "y": 0.17592,
+          "z": 1.57079
+        }
+      },
+      "isBuildIn": true,
+      "name": "fredina_nude",
+      "path": "./models/fredina_nude2.glb",
+      "picBg": "./models/img/Fredina_nude.jpg",
+      "type": "glb"
+    }
+  ]
+}
