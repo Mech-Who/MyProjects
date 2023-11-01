@@ -5,4 +5,7 @@
 GraduationDesign
 get_tickets
 
+# type
+*.code-workspace
+
 # file
