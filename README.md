@@ -25,3 +25,11 @@
 6. XiaoMuChongCrawler
     目标：在小木虫上爬取考研信息
     进度：可以实现功能，但只是简单的脚本
+
+## 开发技巧
+
+1. 生成requirements.txt文件
+    `conda install pipreqs`
+    `pipreqs ./ --encoding=utf8`
+    使用以上两条命令即可完成requirements.txt文件的生成，
+    并且不会有`pip freeze > requirements.txt`的多余包和难以理解的版本写法
