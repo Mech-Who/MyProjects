@@ -111,15 +111,15 @@ li.checked::marker { content: &quot;\2612&quot;; }
            <enum>QFrame::Panel</enum>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="imgRepair">
            <property name="geometry">
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>115</width>
-             <height>397</height>
+             <width>93</width>
+             <height>428</height>
             </rect>
            </property>
            <attribute name="label">
@@ -127,14 +127,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_4">
             <item>
-             <widget class="QPushButton" name="pushButton_3">
+             <widget class="QPushButton" name="repairBtn_1">
               <property name="text">
                <string>修复1</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_4">
+             <widget class="QPushButton" name="repairBtn_2">
               <property name="text">
                <string>修复2</string>
               </property>
@@ -143,19 +143,27 @@ li.checked::marker { content: &quot;\2612&quot;; }
            </layout>
           </widget>
           <widget class="QWidget" name="imgFilter">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>93</width>
+             <height>428</height>
+            </rect>
+           </property>
            <attribute name="label">
             <string>图像过滤</string>
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_3">
             <item>
-             <widget class="QPushButton" name="pushButton_5">
+             <widget class="QPushButton" name="filterBtn_1">
               <property name="text">
                <string>过滤1</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_6">
+             <widget class="QPushButton" name="filterBtn_2">
               <property name="text">
                <string>过滤2</string>
               </property>
@@ -168,8 +176,8 @@ li.checked::marker { content: &quot;\2612&quot;; }
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>115</width>
-             <height>397</height>
+             <width>93</width>
+             <height>428</height>
             </rect>
            </property>
            <attribute name="label">
@@ -177,14 +185,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_7">
             <item>
-             <widget class="QPushButton" name="pushButton_9">
+             <widget class="QPushButton" name="transferBtn_2">
               <property name="text">
                <string>变换1</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton_14">
+             <widget class="QPushButton" name="transferBtn_1">
               <property name="text">
                <string>变换2</string>
               </property>
@@ -213,7 +221,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_8">
               <item>
-               <widget class="QLabel" name="label">
+               <widget class="QLabel" name="imageLabel">
                 <property name="text">
                  <string>放置图片</string>
                 </property>
@@ -239,7 +247,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
               </attribute>
               <layout class="QVBoxLayout" name="verticalLayout_9">
                <item>
-                <widget class="QTextBrowser" name="textBrowser">
+                <widget class="QTextBrowser" name="outputTB">
                  <property name="html">
                   <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -260,7 +268,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
               </attribute>
               <layout class="QVBoxLayout" name="verticalLayout_10">
                <item>
-                <widget class="QTextBrowser" name="textBrowser_2">
+                <widget class="QTextBrowser" name="introducecTB">
                  <property name="html">
                   <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -290,14 +298,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
-            <widget class="QPushButton" name="pushButton_7">
+            <widget class="QPushButton" name="propertyBtn_1">
              <property name="text">
               <string>算法属性1</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_8">
+            <widget class="QPushButton" name="propertyBtn_2">
              <property name="text">
               <string>算法属性1</string>
              </property>
@@ -331,7 +339,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <x>0</x>
      <y>0</y>
      <width>981</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
