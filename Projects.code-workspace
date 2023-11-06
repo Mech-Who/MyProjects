@@ -1,0 +1,42 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "根目录-仅用于修改工作区文件"
+    },{
+      "path": "./AudioManipulate"
+    },{
+      "path": "./khlbot"
+    },{
+      "path": "./OpenCVPractice"
+    },{
+      "path": "./PythonDocx"
+    },{
+      "path": "./PythonQt"
+    },{
+      "path": "./XiaoMuChongCrawler"
+    },{
+      "path": "./FeatureExtraction"
+    },{
+      "path": "../get_tickets"
+    }
+  ],
+  "settings": {
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none",
+    "workbench.colorCustomizations": {
+      "terminal.foreground": "#D3D7CF",
+      "terminal.background": "#2E3436"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.autopep8",
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "johnpapa.vscode-peacock"
+    ]
+  }
+}
