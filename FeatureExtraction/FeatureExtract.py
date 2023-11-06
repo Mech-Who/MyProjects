@@ -21,9 +21,9 @@ import numpy as np
 import cv2
 import os
 
-root = "C:/UserData/Projects/MyProjects/FeatureExtraction"
-dataset = "C:/UserData/Projects/MyProjects/FeatureExtraction/dataset"
-results = "C:/UserData/Projects/MyProjects/FeatureExtraction/results"
+root = "D:/Project/MyProjects/FeatureExtraction"
+dataset = f"{root}/dataset/"
+results = f"{root}/results/"
 
 
 def getFiles(directory_path):
@@ -45,21 +45,21 @@ def getFiles(directory_path):
 
 
 def main():
-    strDateset = ["bark", "bikes", "boat",
-                    "graf", "leuven", "trees", "ubc", "wall"]
+    strDateset = ["ablation", "blur", "light",
+                  "rotation", "viewpoint", "zoom"]
     strMethod = ["SIFT", "SURF", "BRISK", "ORB", "AKAZE"]
     # 递归读取目录下全部文件
     files = [""]
-    descriptors1 = np.zeors()
+    descriptors1 = np.zeros([0])
     keypoints1 = [cv2.KeyPoint()]
-    descriptors2 = np.zeors()
+    descriptors2 = np.zeros([0])
     keypoints2 = [cv2.KeyPoint()]
     matches = [cv2.DMatch()]
     good_matches = [cv2.DMatch()]
     # 用于模型验算
     innersize = 0
-    img1 = cv2.Mat()
-    imgn = cv2.Mat()
+    img1 = np.zeros([0])
+    imgn = np.zeros([0])
     t = cv2.getTickCount()
     print("SIFT、SURF、BRISK、ORB、AKAZE算法测试实验开始")
     # 遍历各种特征点寻找方法
@@ -71,7 +71,7 @@ def main():
         DATESET_COUNT = len(strDateset)
         for idateset in range(DATESET_COUNT):
             # 获得测试图片绝对地址
-            path = f"{root}/dateset/" + strDateset[idateset]
+            path = dataset + strDateset[idateset]
             print(f"数据集为{strDateset[idateset]}")
             # 获得当个数据集中的图片
             files = getFiles(path)
@@ -106,9 +106,9 @@ def main():
                     matcher = cv2.BFMatcher(cv2.NORM_HAMMING)
                 try:
                     extractor.detectAndCompute(
-                        img1, cv2.Mat, keypoints1, descriptors1)
+                        img1, np.ndarray, keypoints1, descriptors1)
                     extractor.detectAndCompute(
-                        imgn, cv2.Mat, keypoints2, descriptors2)
+                        imgn, np.ndarray, keypoints2, descriptors2)
                     matcher.match(descriptors1, descriptors2, matches)
                 except Exception as e:
                     print(" 特征点提取时发生错误 ")
@@ -136,7 +136,7 @@ def main():
                     obj.push_back(keypoints1[good_matches[a].queryIdx].pt)
                     scene.push_back(keypoints2[good_matches[a].trainIdx].pt)
                 # 计算单应矩阵（在calib3d中)
-                H = np.zeros()
+                H = np.zeros([0])
                 try:
                     H = cv2.findHomography(obj, scene, cv2.CV_RANSAC)
                 except Exception as e:
@@ -146,19 +146,19 @@ def main():
                     print(" findHomography失败 ")
                     continue
                 # 计算内点数目
-                matObj = np.zeros()
-                matScene = np.zeros()
+                matObj = np.zeros([0])
+                matScene = np.zeros([0])
                 # TODO: data.db不存在
                 pcvMat = H
                 Hmodel = pcvMat.data.db
                 Htmp = Hmodel[6]
                 for isize in range(obj.size()):
                     ww = 1./(Hmodel[6]*obj[isize].x +
-                            Hmodel[7]*obj[isize].y + 1.)
+                             Hmodel[7]*obj[isize].y + 1.)
                     dx = (Hmodel[0]*obj[isize].x + Hmodel[1] *
-                            obj[isize].y + Hmodel[2])*ww - scene[isize].x
+                          obj[isize].y + Hmodel[2])*ww - scene[isize].x
                     dy = (Hmodel[3]*obj[isize].x + Hmodel[4] *
-                            obj[isize].y + Hmodel[5])*ww - scene[isize].y
+                          obj[isize].y + Hmodel[5])*ww - scene[isize].y
                     err = float(dx*dx + dy*dy)  # 3个像素之内认为是同一个点
                     if (err < 9):
                         innersize += 1
@@ -169,12 +169,12 @@ def main():
                 print(f" {(cv2.getTickCount() - t) / cv2.getTickFrequency()}")
                 t = cv2.getTickCount()
                 # 如果效果较好，则打印出来
-                matTmp = np.zeros()
+                matTmp = np.zeros([0])
                 if (ff == 1.0):
                     cv2.drawMatches(img1, keypoints1, imgn,
                                     keypoints2, good_matches, matTmp)
                     charJ = iimage
-                    strResult = f"{root}/result/" + \
+                    strResult = results + \
                         strDateset[idateset] + _strMethod + charJ
                     cv2.imwrite(strResult, matTmp)
                 ff = 0
@@ -185,3 +185,7 @@ def main():
     input()
     cv2.waitKey()
     return
+
+
+if __name__ == "__main__":
+    main()
