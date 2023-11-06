@@ -18,6 +18,8 @@
     },{
       "path": "./FeatureExtraction"
     },{
+      "path": "./Patterns"
+    },{
       "path": "../get_tickets"
     }
   ],
