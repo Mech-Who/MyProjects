@@ -8,7 +8,7 @@
 #include <opencv2/features2d.hpp>
 #include <windows.h>
 #define DATESET_COUNT 6
-#define METHOD_COUNT 4
+#define METHOD_COUNT 4  
 using namespace cv;
 using namespace std;
 
@@ -38,7 +38,8 @@ int main()
     strMethods[0] = "SIFT";
     strMethods[1] = "BRISK";
     strMethods[2] = "ORB";
-    strMethods[3] = "AKAZE";
+    strMethods[3] = "AKAZE";      
+
     // 递归读取目录下全部文件
     vector<string> files;
     Mat descriptors1, descriptors2;
@@ -53,7 +54,7 @@ int main()
     {
         // 遍历每一种数据集下的图片
         string strDateset = strDatesets[n];
-        cout << "===================使用" << strDateset << "数据集===================" << endl;
+        cout << "=================== Use " << strDateset << "dataset ===================" << endl;
         string path = root + "/dataset/" + strDateset;
         files = get_img_files_dir(path);
 
@@ -63,7 +64,7 @@ int main()
             int error_read = 0; // 算法能在多少张图像上匹配出最低数目的关键点
             float ap = 0;       // 计算平均准确率
 
-            cout << "============" << strMethod << "算法对比开始============" << endl;
+            cout << "============ The " << strMethod << " algorithm comparision start! ============" << endl;
             t = getTickCount();
 
             for (int i = 1; i < 11; i++)
@@ -81,7 +82,7 @@ int main()
                     extractor = SIFT::create();
                     matcher = BFMatcher(NORM_L2);
                     break;
-                case 1: //"SURF"
+                case 1: //"BRISK"
                     extractor = BRISK::create();
                     matcher = BFMatcher(NORM_L2);
                     break;
@@ -102,7 +103,7 @@ int main()
                 }
                 catch (Exception *e)
                 {
-                    cout << " 特征点提取时发生错误 " << endl;
+                    cout << " Keypoint extracting meets an ERROR! " << endl;
                     error_read++;
                     continue;
                 }
@@ -124,7 +125,7 @@ int main()
                 }
                 if (good_matches.size() < 1)
                 {
-                    cout << " 有效特征点数目小于1个，粗匹配失败 " << endl;
+                    cout << " The number of valid keypoint is less then 1, rough match failed! " << endl;
                     error_read++;
                     continue;
                 }
@@ -190,12 +191,12 @@ int main()
             }
 
             //  打印算法用时
-            cout << "算法平均用时：" << ((getTickCount() - t) / getTickFrequency()) / 10 << "s/张" << endl;
+            cout << "Average time of algorithm: " << ((getTickCount() - t) / getTickFrequency()) / 10 << "s/张" << endl;
             // 计算算法使用了多少张图像
-            cout << "用图数目：" << 10 - error_read << endl;
+            cout << "Number of used pictures: " << 10 - error_read << endl;
             // 平均准确率
             ap /= (10 - error_read);
-            cout << "平均准确率：" << ap << endl;
+            cout << "Average precision: " << ap << endl;
 
             // return 0;
         }
