@@ -44,20 +44,132 @@ def getFiles(directory_path):
 # 遍历dateset,分别对SIFT, SURF, BRISK, ORB, FREAK算法进行运算，得出初步结论
 
 
+def select_method(choose):
+    """根据数字选方法，返回executor和matcher"""
+    extractor = ''
+    matcher = ''
+    if choose == 0:  # "SIFT"
+        extractor = cv2.SIFT_create()
+        matcher = cv2.BFMatcher(cv2.NORM_L2)
+    elif choose == 1:  # "BRISK"
+        extractor = cv2.BRISK.create()
+        matcher = cv2.BFMatcher(cv2.NORM_L2)
+    elif choose == 2:  # "ORB"
+        extractor = cv2.ORB.create()
+        matcher = cv2.BFMatcher(cv2.NORM_HAMMING)
+    elif choose == 3:  # "AKAZE"
+        extractor = cv2.AKAZE.create()
+        matcher = cv2.BFMatcher(cv2.NORM_HAMMING)
+    return (extractor, matcher)
+
+
+def process_data(basic_file: str, current_file: str, 
+                 extractor: cv2.Feature2D, matcher: cv2.BFMatcher):
+    """
+    处理数据：
+    1. 提取特征点
+    2. 特征点匹配
+    3. 内点提取
+
+    """
+    # 使用img1对比余下的图片，得出结果
+    img1 = cv2.imread(basic_file, 0)
+    imgn = cv2.imread(current_file, 0)
+
+    # 错读数据
+    delta_error_read = 0
+
+    # 提取特征点
+    query_keypoints, train_keypoints = 0, 0
+    matches = []
+    try:
+        query_keypoints, query_descriptors = extractor.detectAndCompute(img1, None)
+        train_keypoints, train_descriptors = extractor.detectAndCompute(imgn, None)
+        matches = matcher.match(query_descriptors, train_descriptors)
+    except Exception as e:
+        print(" 特征点提取时发生错误 ")
+        delta_error_read += 1
+        return 0, delta_error_read
+
+    # 对特征点进行粗匹配
+    max_dist = 0.0
+    min_dist = 100.0
+    for match in matches:
+        dist = match.distance
+        if (dist < min_dist):
+            min_dist = dist
+        if (dist > max_dist):
+            max_dist = dist
+
+    good_matches = [match for match in matches if match.distance <= max(2 * min_dist, 0.02)]
+
+    # 粗匹配原本是要求4个特征点
+    # 粗匹配先过滤一部分特征点
+    if (len(good_matches) < 4):
+        print(" 有效特征点数目小于4个，粗匹配失败 ")
+        delta_error_read += 1
+        return 0, delta_error_read
+
+    # # 使用RANSAC进行内点提纯
+    # points1, points2 = [], []  # cv2.typing.Point2f
+    # for good in good_matches:
+    #     queryIdx = good.queryIdx
+    #     trainIdx = good.trainIdx
+
+    #     if queryIdx >= 0 and queryIdx < len(query_keypoints) \
+    #             and trainIdx >= 0 and trainIdx < len(train_keypoints):
+    #         points1.append(query_keypoints[queryIdx].pt)
+    #         points2.append(train_keypoints[trainIdx].pt)
+    
+    matched_points = [(query_keypoints[match.queryIdx].pt, train_keypoints[match.trainIdx].pt) for match in good_matches]
+
+    src_points = np.float32([m[0] for m in matched_points])
+    dst_points = np.float32([m[1] for m in matched_points])
+
+    model, inliers = cv2.findHomography(src_points, dst_points, cv2.RANSAC, 1)
+
+    refined_matched_points = [matched_points[i] for i in inliers.ravel()]
+
+    if refined_matched_points == 0:
+        delta_error_read += 1
+
+    
+
+    # # 通过RANSAC方法，对现有的特征点对进行“提纯”
+    # obj, scene = [], []
+    # for good in good_matches:
+    #     # 分别将两处的good_matches对应的点对压入向量,只需要压入点的信息就可以
+    #     obj.append(query_keypoints[good.queryIdx].pt)
+    #     scene.append(train_keypoints[good.trainIdx].pt)
+
+    # # 使用基础矩阵作为提纯模型
+    # inliers_mask = np.zeros([5, 10])
+    # F, inliers_mask = cv2.findFundamentalMat(
+    #     np.array(points1), np.array(points2), cv2.FM_RANSAC, 0.0001, 0.99)
+
+    # ransac_matches = []  # cv2.DMatch # 提纯之后的内点
+    # iii = 0
+    # for good in good_matches:
+    #     if inliers_mask is not None and inliers_mask[iii] is not None and iii < inliers_mask.shape[0]:
+    #         ransac_matches.append(good)
+    #     iii += 1
+
+    # if len(ransac_matches) == 0:
+    #     delta_error_read += 1
+
+    ff = float(len(refined_matched_points)) / len(good_matches)
+    # print(f"ff: {ff}, float(innersize): {float(len(ransac_matches))}, len: {len(good_matches)}")
+
+    return ff, delta_error_read
+
+
 def main():
     strDateset = ["ablation", "blur", "light",
                   "rotation", "viewpoint", "zoom"]
     strMethod = ["SIFT", "BRISK", "ORB", "AKAZE"]
-    # 递归读取目录下全部文件
-    files = [""]
-    descriptors1 = np.zeros([0])
-    keypoints1 = [cv2.KeyPoint()]
-    descriptors2 = np.zeros([0])
-    keypoints2 = [cv2.KeyPoint()]
-    matches = [cv2.DMatch()]
-    good_matches = [cv2.DMatch()]
     # 用于模型验算
     innersize = 0
+    image_nums = 10
     img1 = np.zeros([0])
     imgn = np.zeros([0])
     t = cv2.getTickCount()
@@ -65,125 +177,37 @@ def main():
     print("SIFT、SURF、BRISK、ORB、AKAZE算法测试实验开始")
 
     # 遍历各种特征点寻找方法
-    METHOD_COUNT = len(strMethod)
-    for imethod in range(METHOD_COUNT-1, METHOD_COUNT):
+    for imethod in range(len(strMethod)):
         _strMethod = strMethod[imethod]
-        print(f"开始测试{imethod + 1}方法")
+        print(f"===== 开始测试{imethod + 1}方法 =====")
+
         # 遍历各个路径
-        DATESET_COUNT = len(strDateset)
-        for idateset in range(DATESET_COUNT):
-            average_precision = 0.0  # 计算平均准确率
-            error_read = 0  # 算法能在多少张图像上匹配出最低数目的关键点
+        for idateset in range(len(strDateset)):
             # 获得测试图片绝对地址
             path = dataset + strDateset[idateset]
             print(f"数据集为{strDateset[idateset]}")
-            # 获得当个数据集中的图片
+            # 获得当前数据集中的图片,递归读取当前目录下全部图片
             files = getFiles(path)
             print(f" 共{len(files)}张图片")
+
+            # 生成特征点算法及其匹配方法
+            extractor, matcher = select_method(imethod)
+
+            # average_precision: 计算平均准确率
+            # error_read: 算法能在多少张图像上匹配出最低数目的关键点
+            average_precision, error_read = 0.0, 0
             for iimage in range(1, len(files)):
-                # 使用img1对比余下的图片，得出结果
-                img1 = cv2.imread(files[0], 0)
-                imgn = cv2.imread(files[iimage], 0)
-                # 生成特征点算法及其匹配方法
-                extractor = ''
-                matcher = ''
-                if imethod == 0:  # "SIFT"
-                    extractor = cv2.SIFT.create()
-                    matcher = cv2.BFMatcher(cv2.NORM_L2)
-                elif imethod == 1:  # "BRISK"
-                    extractor = cv2.BRISK.create()
-                    matcher = cv2.BFMatcher(cv2.NORM_L2)
-                elif imethod == 2:  # "ORB"
-                    extractor = cv2.ORB.create()
-                    matcher = cv2.BFMatcher(cv2.NORM_HAMMING)
-                elif imethod == 3:  # "AKAZE"
-                    extractor = cv2.AKAZE.create()
-                    matcher = cv2.BFMatcher(cv2.NORM_HAMMING)
-
-                try:
-                    extractor.detectAndCompute(
-                        img1, cv2.UMat(), keypoints1, descriptors1)
-                    extractor.detectAndCompute(
-                        imgn, cv2.UMat(), keypoints2, descriptors2)
-                    matcher.match(descriptors1, descriptors2, matches)
-                except Exception as e:
-                    print(" 特征点提取时发生错误 ")
-                    error_read += 1
-                    continue
-
-                # 对特征点进行粗匹配
-                max_dist = 0.0
-                min_dist = 100.0
-
-                for a in range(len(matches)):
-                    dist = matches[a].distance
-                    if (dist < min_dist):
-                        min_dist = dist
-                    if (dist > max_dist):
-                        max_dist = dist
-
-                for a in range(len(matches)):
-                    if (matches[a].distance <= max(2 * min_dist, 0.02)):
-                        good_matches.append(matches[a])
-
-                # 粗匹配原本是要求4个特征点
-                if (len(good_matches) < 2):
-                    print(" 有效特征点数目小于2个，粗匹配失败 ")
-                    error_read += 1
-                    continue
-
-                # 使用RANSAC进行内点提纯
-                points1, points2 = [], []  # cv2.typing.Point2f
-                for match in good_matches:
-                    queryIdx = match.queryIdx
-                    trainIdx = match.trainIdx
-
-                    if queryIdx >= 0 and queryIdx < len(keypoints1) \
-                            and trainIdx >= 0 and trainIdx < len(keypoints2):
-                        points1.append(keypoints1[queryIdx].pt)
-                        points2.append(keypoints2[trainIdx].pt)
-
-                # 通过RANSAC方法，对现有的特征点对进行“提纯”
-                obj = [(0, 0)]
-                scene = [(0, 0)]
-                for a in range(len(good_matches)):
-                    # 分别将两处的good_matches对应的点对压入向量,只需要压入点的信息就可以
-                    obj.push_back(keypoints1[good_matches[a].queryIdx].pt)
-                    scene.push_back(keypoints2[good_matches[a].trainIdx].pt)
-
-                # 使用基础矩阵作为提纯模型
-                inliers_mask = np.zeros([5, 10])
-                fundamental_matrix = cv2.findFundamentalMat(
-                    points1, points2, cv2.FM_RANSAC, 3, 0.99, inliers_mask)
-
-                ransac_matches = []  # cv2.DMatch # 提纯之后的内点
-                iii = 0
-                for match in good_matches:
-                    if iii < inliers_mask.shape[-2]:
-                        ransac_matches.append(match)
-                    iii += 1
-
-                innersize = len(ransac_matches)
-                if innersize == 0:
-                    error_read += 1
-
-                ff = float(innersize) / len(good_matches)
-                average_precision += ff
-
-                ff = 0
-                innersize = 0
-                matches.clear()
-                good_matches.clear()
-
+                delta_ap, delta_er = process_data(files[0], files[iimage], extractor, matcher)
+                average_precision += delta_ap
+                error_read += delta_er
             # 打印算法用时
             print(
                 f"算法平均用时：{((cv2.getTickCount() - t) / cv2.getTickFrequency()) / 10}s/张")
             # 计算算法使用了多少张图像
-            print(f"用图数目: {10 - error_read}")
+            print(f"用图数目: {image_nums - error_read}")
             # 平均准确率
-            average_precision /= (10 - error_read)
+            average_precision /= (image_nums - error_read)
             print(f"平均准确率: {average_precision}")
-            files.clear()
     cv2.waitKey(0)
     return
 

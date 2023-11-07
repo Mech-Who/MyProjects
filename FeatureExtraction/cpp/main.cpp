@@ -9,7 +9,7 @@
 #include <windows.h>
 #define DATESET_COUNT 6
 #define METHOD_COUNT 4  
-using namespace cv;
+
 using namespace std;
 
 string root = "D:/Project/MyProjects/FeatureExtraction";
@@ -19,7 +19,7 @@ vector<string> get_img_files_dir(const string &directory)
 {
     string pattern = directory + "/*.*";
     vector<string> file_paths;
-    glob(pattern, file_paths, false);
+    cv::glob(pattern, file_paths, false);
     return file_paths;
 }
 
@@ -42,19 +42,19 @@ int main()
 
     // 递归读取目录下全部文件
     vector<string> files;
-    Mat descriptors1, descriptors2;
-    vector<KeyPoint> keypoints1, keypoints2;
-    vector<DMatch> matches, good_matches;
+    cv::Mat descriptors1, descriptors2;
+    vector<cv::KeyPoint> keypoints1, keypoints2;
+    vector<cv::DMatch> matches, good_matches;
     // 用于模型验算
     int innersize = 0;
-    Mat img1, imgn;
+    cv::Mat img1, imgn;
     int64 t;
 
     for (int n = 0; n < DATESET_COUNT; n++)
     {
         // 遍历每一种数据集下的图片
         string strDateset = strDatesets[n];
-        cout << "=================== Use " << strDateset << "dataset ===================" << endl;
+        cout << "=================== Use " << strDateset << " dataset ===================" << endl;
         string path = root + "/dataset/" + strDateset;
         files = get_img_files_dir(path);
 
@@ -65,43 +65,43 @@ int main()
             float ap = 0;       // 计算平均准确率
 
             cout << "============ The " << strMethod << " algorithm comparision start! ============" << endl;
-            t = getTickCount();
+            t = cv::getTickCount();
 
             for (int i = 1; i < 11; i++)
             {
 
-                img1 = imread(files[0], 1); // 读取彩色图
-                imgn = imread(files[i], 1);
+                img1 = cv::imread(files[0], 1); // 读取彩色图
+                imgn = cv::imread(files[i], 1);
                 // 生成特征点算法及其匹配方法
-                Ptr<Feature2D> extractor;
-                BFMatcher matcher;
+                cv::Ptr<cv::Feature2D> extractor;
+                cv::BFMatcher matcher;
                 //  选择算法
                 switch (m)
                 {
                 case 0: //"SIFT"
-                    extractor = SIFT::create();
-                    matcher = BFMatcher(NORM_L2);
+                    extractor = cv::SIFT::create();
+                    matcher = cv::BFMatcher(cv::NORM_L2);
                     break;
                 case 1: //"BRISK"
-                    extractor = BRISK::create();
-                    matcher = BFMatcher(NORM_L2);
+                    extractor = cv::BRISK::create();
+                    matcher = cv::BFMatcher(cv::NORM_L2);
                     break;
                 case 2: //"ORB"
-                    extractor = ORB::create();
-                    matcher = BFMatcher(NORM_HAMMING);
+                    extractor = cv::ORB::create();
+                    matcher = cv::BFMatcher(cv::NORM_HAMMING);
                     break;
                 case 3: //"AKAZE"
-                    extractor = AKAZE::create();
-                    matcher = BFMatcher(NORM_HAMMING);
+                    extractor = cv::AKAZE::create();
+                    matcher = cv::BFMatcher(cv::NORM_HAMMING);
                     break;
                 }
                 try
                 {
-                    extractor->detectAndCompute(img1, Mat(), keypoints1, descriptors1);
-                    extractor->detectAndCompute(imgn, Mat(), keypoints2, descriptors2);
+                    extractor->detectAndCompute(img1, cv::Mat(), keypoints1, descriptors1);
+                    extractor->detectAndCompute(imgn, cv::Mat(), keypoints2, descriptors2);
                     matcher.match(descriptors1, descriptors2, matches);
                 }
-                catch (Exception *e)
+                catch (cv::Exception *e)
                 {
                     cout << " Keypoint extracting meets an ERROR! " << endl;
                     error_read++;
@@ -134,8 +134,8 @@ int main()
                 // cout << "accuracy: " << accuracy << endl;
 
                 // 使用RANSAC进行内点提纯
-                vector<Point2f> points1, points2;
-                for (const DMatch &match : good_matches)
+                vector<cv::Point2f> points1, points2;
+                for (const cv::DMatch &match : good_matches)
                 {
                     int queryIdx = match.queryIdx;
                     int trainIdx = match.trainIdx;
@@ -149,12 +149,12 @@ int main()
                 }
 
                 // 使用基础矩阵作为提纯模型
-                Mat inliers_mask;
-                Mat fundamental_matrix = findFundamentalMat(points1, points2, FM_RANSAC, 3, 0.99, inliers_mask);
+                cv::Mat inliers_mask;
+                cv::Mat fundamental_matrix = findFundamentalMat(points1, points2, cv::FM_RANSAC, 3, 0.99, inliers_mask);
 
-                vector<DMatch> ransac_matches; // 提纯之后的内点
+                vector<cv::DMatch> ransac_matches; // 提纯之后的内点
                 int iii = 0;                   // 用于跟踪 inliers_mask 中的索引
-                for (const DMatch &match : good_matches)
+                for (const cv::DMatch &match : good_matches)
                 {
                     if (iii < inliers_mask.rows && inliers_mask.at<uchar>(iii))
                     {
@@ -191,7 +191,7 @@ int main()
             }
 
             //  打印算法用时
-            cout << "Average time of algorithm: " << ((getTickCount() - t) / getTickFrequency()) / 10 << "s/张" << endl;
+            cout << "Average time of algorithm: " << ((cv::getTickCount() - t) / cv::getTickFrequency()) / 10 << "s/张" << endl;
             // 计算算法使用了多少张图像
             cout << "Number of used pictures: " << 10 - error_read << endl;
             // 平均准确率
