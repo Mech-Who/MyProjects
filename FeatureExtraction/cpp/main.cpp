@@ -6,10 +6,13 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/calib3d.hpp>
 #include <opencv2/features2d.hpp>
+#include <windows.h>
 #define DATESET_COUNT 6
 #define METHOD_COUNT 4
 using namespace cv;
 using namespace std;
+
+string root = "D:/Project/MyProjects/FeatureExtraction";
 
 // 获取目录下的所有文件名
 vector<string> get_img_files_dir(const string &directory)
@@ -20,8 +23,10 @@ vector<string> get_img_files_dir(const string &directory)
     return file_paths;
 }
 
-void main()
+int main()
 {
+    SetConsoleOutputCP(CP_UTF8);
+
     string strDatesets[DATESET_COUNT];
     strDatesets[0] = "blur";
     strDatesets[1] = "light";
@@ -48,8 +53,8 @@ void main()
     {
         // 遍历每一种数据集下的图片
         string strDateset = strDatesets[n];
-        cout << "===================使用" << strDateset << "数据集" << endl;
-        string path = "D:/研究生课程/视频内容分析与实践/CODE/DETECTION/dataset/" + strDateset;
+        cout << "===================使用" << strDateset << "数据集===================" << endl;
+        string path = root + "/dataset/" + strDateset;
         files = get_img_files_dir(path);
 
         for (int m = 0; m < METHOD_COUNT; m++)
@@ -58,7 +63,7 @@ void main()
             int error_read = 0; // 算法能在多少张图像上匹配出最低数目的关键点
             float ap = 0;       // 计算平均准确率
 
-            cout << "============" << strMethod << "算法对比开始" << endl;
+            cout << "============" << strMethod << "算法对比开始============" << endl;
             t = getTickCount();
 
             for (int i = 1; i < 11; i++)
@@ -192,12 +197,11 @@ void main()
             ap /= (10 - error_read);
             cout << "平均准确率：" << ap << endl;
 
-            // return;
+            // return 0;
         }
     }
-
-    waitKey(0);
-    return;
+    system("pause");
+    return 0;
 }
 
 /********************可参考chatgpt给出的特征匹配样例**********************************/
