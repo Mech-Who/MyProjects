@@ -196,8 +196,8 @@ def main():
                 writeFileAndPrint(results, f"平均准确率: {average_precision}")
             except ZeroDivisionError as e:
                 writeFileAndPrint(results, f"没有获得提取结果较好的图片:{e}")
-            writeFileAndPrint(results, f"== 数据集{strDataset[idataset]}测试结束 ==")
-        writeFileAndPrint(results, f"========== {strMethod[imethod]}方法测试结束 ==========")
+            writeFileAndPrint(results, f"== 数据集{strDataset[idataset]}测试结束 ==\n")
+        writeFileAndPrint(results, f"========== {strMethod[imethod]}方法测试结束 ==========\n\n")
     writeFileAndPrint(results, "实验结束")
     cv2.waitKey(0)
     return
