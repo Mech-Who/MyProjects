@@ -2,10 +2,9 @@ import os
 import sys
 
 sys.path.append(r"D:\Project\MyProjects\FeatureExtraction")
+sys.path.append(r"D:\Project\MyProjects\FeatureExtraction\DataAugmentation")
 
 import DataAugmentation
-
-
 
 crop_image_path = "./python/crop"
 color_vibrance_image_path = "./python/color_vibrance"
