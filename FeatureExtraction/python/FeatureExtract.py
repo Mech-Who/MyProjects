@@ -1,29 +1,11 @@
-"""
-#include "stdafx.h"
-#include <opencv2/core/utility.hpp>
-#include "opencv2/imgproc.hpp"
-#include "opencv2/videoio.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/calib3d.hpp"
-#include "opencv2/xfeatures2d.hpp"
-#include <iostream>
-#include <ctype.h>
-#include "GOCVHelper.h"
-
-#define DATESET_COUNT 8
-#define METHOD_COUNT 5
-
-using namespace cv;
-using namespace std;
-using namespace xfeatures2d;
-"""
 import numpy as np
 import cv2
 import os
 
-root = "D:/Project/MyProjects/FeatureExtraction"
+
+root = "D:/Project/MyProjects/FeatureExtraction/python"
 dataset = f"{root}/dataset/"
-results = f"{root}/results/"
+results = f"{root}/results.txt"
 
 
 def getFiles(directory_path):
@@ -41,7 +23,12 @@ def getFiles(directory_path):
 
     return file_list
 
-# 遍历dateset,分别对SIFT, SURF, BRISK, ORB, FREAK算法进行运算，得出初步结论
+
+def writeFileAndPrint(filename, message, mode='a', encoding='utf-8'):
+    print(message)
+    with open(filename, mode=mode, encoding=encoding) as f:
+        f.write(message)
+        f.write('\n')
 
 
 def select_method(choose):
@@ -131,9 +118,8 @@ def process_data(basic_file: str, current_file: str,
     refined_matched_points = [matched_points[i] for i in inliers.ravel()]
 
     if refined_matched_points == 0:
+        print("无可用提纯点，提纯失败")
         delta_error_read += 1
-
-    
 
     # # 通过RANSAC方法，对现有的特征点对进行“提纯”
     # obj, scene = [], []
@@ -164,31 +150,28 @@ def process_data(basic_file: str, current_file: str,
 
 
 def main():
-    strDateset = ["ablation", "blur", "light",
-                  "rotation", "viewpoint", "zoom"]
+    strDataset = []
+    for dataset_name in os.listdir(dataset):
+        strDataset.append(dataset_name)
     strMethod = ["SIFT", "BRISK", "ORB", "AKAZE"]
-    # 用于模型验算
-    innersize = 0
-    image_nums = 10
-    img1 = np.zeros([0])
-    imgn = np.zeros([0])
-    t = cv2.getTickCount()
+    start_time = cv2.getTickCount()
 
-    print("SIFT、SURF、BRISK、ORB、AKAZE算法测试实验开始")
+    writeFileAndPrint(results, "SIFT、SURF、BRISK、ORB、AKAZE算法测试实验开始", mode='w')
 
     # 遍历各种特征点寻找方法
     for imethod in range(len(strMethod)):
         _strMethod = strMethod[imethod]
-        print(f"===== 开始测试{imethod + 1}方法 =====")
+        writeFileAndPrint(results, f"===== 开始测试{strMethod[imethod]}方法 =====")
 
         # 遍历各个路径
-        for idateset in range(len(strDateset)):
+        for idataset in range(len(strDataset)):
             # 获得测试图片绝对地址
-            path = dataset + strDateset[idateset]
-            print(f"数据集为{strDateset[idateset]}")
+            path = dataset + strDataset[idataset]
+            writeFileAndPrint(results, f"== 开始测试数据集{strDataset[idataset]} ==")
             # 获得当前数据集中的图片,递归读取当前目录下全部图片
             files = getFiles(path)
-            print(f" 共{len(files)}张图片")
+            image_nums = len(files)
+            writeFileAndPrint(results, f" 共{len(files)}张图片")
 
             # 生成特征点算法及其匹配方法
             extractor, matcher = select_method(imethod)
@@ -197,17 +180,25 @@ def main():
             # error_read: 算法能在多少张图像上匹配出最低数目的关键点
             average_precision, error_read = 0.0, 0
             for iimage in range(1, len(files)):
+                print(f"开始处理第{iimage}张图片")
                 delta_ap, delta_er = process_data(files[0], files[iimage], extractor, matcher)
                 average_precision += delta_ap
                 error_read += delta_er
             # 打印算法用时
-            print(
-                f"算法平均用时：{((cv2.getTickCount() - t) / cv2.getTickFrequency()) / 10}s/张")
+            avg_time = ((cv2.getTickCount() - start_time) / cv2.getTickFrequency()) / 10
+            writeFileAndPrint(results, f"算法平均用时：{avg_time}s/张")
             # 计算算法使用了多少张图像
-            print(f"用图数目: {image_nums - error_read}")
+            valid_image_num = image_nums - error_read
+            writeFileAndPrint(results, f"用图数目: {valid_image_num}")
             # 平均准确率
-            average_precision /= (image_nums - error_read)
-            print(f"平均准确率: {average_precision}")
+            try:
+                average_precision /= (image_nums - error_read)
+                writeFileAndPrint(results, f"平均准确率: {average_precision}")
+            except ZeroDivisionError as e:
+                writeFileAndPrint(results, f"没有获得提取结果较好的图片:{e}")
+            writeFileAndPrint(results, f"== 数据集{strDataset[idataset]}测试结束 ==")
+        writeFileAndPrint(results, f"========== {strMethod[imethod]}方法测试结束 ==========")
+    writeFileAndPrint(results, "实验结束")
     cv2.waitKey(0)
     return
 
