@@ -156,7 +156,7 @@ def main():
     strMethod = ["SIFT", "BRISK", "ORB", "AKAZE"]
     start_time = cv2.getTickCount()
 
-    writeFileAndPrint(results, "SIFT、SURF、BRISK、ORB、AKAZE算法测试实验开始", mode='w')
+    writeFileAndPrint(results, "SIFT、BRISK、ORB、AKAZE算法测试实验开始", mode='w')
 
     # 遍历各种特征点寻找方法
     for imethod in range(len(strMethod)):
@@ -186,7 +186,7 @@ def main():
                 error_read += delta_er
             # 打印算法用时
             avg_time = ((cv2.getTickCount() - start_time) / cv2.getTickFrequency()) / 10
-            writeFileAndPrint(results, f"算法平均用时：{avg_time}s/张")
+            writeFileAndPrint(results, f"算法平均用时: {avg_time}s/张")
             # 计算算法使用了多少张图像
             valid_image_num = image_nums - error_read
             writeFileAndPrint(results, f"用图数目: {valid_image_num}")
