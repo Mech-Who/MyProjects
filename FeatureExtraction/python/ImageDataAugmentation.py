@@ -6,11 +6,12 @@ sys.path.append(r"D:\Project\MyProjects\FeatureExtraction\DataAugmentation")
 
 import DataAugmentation
 
-crop_image_path = "./python/crop"
-color_vibrance_image_path = "./python/color_vibrance"
-rotate_image_path = "./python/rotate"
-shift_image_path = "./python/shift"
-zoom_image_path = "./python/zoom"
+root = "./python/dataset"
+crop_image_path = f"{root}/crop"
+color_vibrance_image_path = f"{root}/color_vibrance"
+rotate_image_path = f"{root}/rotate"
+shift_image_path = f"{root}/shift"
+zoom_image_path = f"{root}/zoom"
 
 paths = [
     crop_image_path,

@@ -41,7 +41,7 @@ def create_color_vibrance_image(image_path, recursion=False, subdirname=None, co
         cj_img = Image.fromarray(img)
         # 设置图片名
         filename = img_path.split("\\")[-1].split('.')[0]
-        for i in range(count):
+        for i in range(int(count/5)):
             # 调整饱和度
             sa_img = np.asarray(randomColor(cj_img, saturation=1))
             # 调整亮度
