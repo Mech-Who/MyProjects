@@ -51,34 +51,43 @@ def rotate_image(img, angle, crop):
         img_rotated = crop_image(img_rotated, x0, y0, w_crop, h_crop)
     return img_rotated
 
-def create_rotate_image(image_path, subdirname=None, count=1):
+def create_rotate_image(image_path, recursion=False, subdirname=None, count=1):
+    """
+    image_path: 图片路径
+    recursion: 是否递归搜索图片目录，默认为False，不进行递归搜索
+    subdirname: 子目录名称
+    count: 生成图片的数量
+    """
     image_path = os.path.abspath(image_path)
-    files = getFiles(image_path)
+    files = getFiles(image_path, recursion)
     for img_path in files:
         img = cv2.imread(img_path)
         for i in range(count):
             # 随机旋转度数
             degree = random.randint(0, 360)
             # 无黑边旋转
-            nonblack_image_rotated = rotate_image(img, degree, True)
+            # nonblack_image_rotated = rotate_image(img, degree, True)
             # 有黑边旋转
             black_image_rotated = rotate_image(img, degree, False)
             # 保存图片
             filename = img_path.split("\\")[-1].split('.')[0]
             new_black_filename = filename + f'_black{degree:03d}rotate{i+1:03d}.jpg'
-            new_nonblack_filename = filename + f'_nonblack{degree:03d}rotate{i+1:03d}.jpg'
+            # new_nonblack_filename = filename + f'_nonblack{degree:03d}rotate{i+1:03d}.jpg'
             if subdirname:
-                new_black_img_path = os.path.join(image_path, subdirname, new_black_filename)
-                new_nonblack_img_path = os.path.join(image_path, subdirname, new_nonblack_filename)
+                dir_name = os.path.join(image_path, subdirname)
+                if not os.path.exists(dir_name):
+                    os.mkdir(dir_name)
+                new_black_img_path = os.path.join(dir_name, new_black_filename)
+                # new_nonblack_img_path = os.path.join(dir_name, new_nonblack_filename)
             else:
                 new_black_img_path = os.path.join(image_path, new_black_filename)
-                new_nonblack_img_path = os.path.join(image_path, new_nonblack_filename)
+                # new_nonblack_img_path = os.path.join(image_path, new_nonblack_filename)
             print(f"{new_black_img_path} has saved!")
-            print(f"{new_nonblack_img_path} has saved!")
-            # cv2.imwrite(new_black_img_path, black_image_rotated)
+            # print(f"{new_nonblack_img_path} has saved!")
+            cv2.imwrite(new_black_img_path, black_image_rotated)
             # cv2.imwrite(new_nonblack_img_path, nonblack_image_rotated)
 
 if __name__ == "__main__":
     image_path = r"./DataAugmentation/TestImage"
     create_rotate_image(image_path, "rotate", 2)
-    create_rotate_image(image_path, None, 2)
+    # create_rotate_image(image_path, None, 2)
