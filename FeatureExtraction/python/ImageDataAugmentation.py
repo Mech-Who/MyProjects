@@ -6,30 +6,47 @@ sys.path.append(r"D:\Project\MyProjects\FeatureExtraction\DataAugmentation")
 
 import DataAugmentation
 
+# 设置数据集目录
 root = "./python/dataset"
-crop_image_path = f"{root}/crop"
-color_vibrance_image_path = f"{root}/color_vibrance"
-rotate_image_path = f"{root}/rotate"
-shift_image_path = f"{root}/shift"
-zoom_image_path = f"{root}/zoom"
 
-paths = [
-    crop_image_path,
-    color_vibrance_image_path,
-    rotate_image_path,
-    shift_image_path,
-    zoom_image_path
-]
+trans_type = ['crop', 'color_vibrance', 'rotate', 'shift', 'zoom']
 
+paths = [f"{root}/{trans}" for trans in trans_type]
+
+import random
+
+source_path = './VOC2007/VOCdevkit/JPEGImages'
+source_absolute_path = os.path.abspath(source_path)
+files = DataAugmentation.utils.getFiles(source_absolute_path, False)
+sources = random.choices(files, k=len(paths))
+
+import shutil
+
+# 创建目录
 for path in paths:
     if not os.path.exists(path):
         os.mkdir(path)
+    else:
+        shutil.rmtree(path)
+        os.mkdir(path)
 
-image_count = 100
+# 移动文件
+for source, path in zip(sources, paths):
+    shutil.copy(source, path)
 
-DataAugmentation.create_cropped_image(crop_image_path, count=image_count)
-DataAugmentation.create_color_vibrance_image(color_vibrance_image_path, count=image_count)
-DataAugmentation.create_rotate_image(rotate_image_path, count=image_count)
-DataAugmentation.create_shift_image(shift_image_path, count=image_count)
-DataAugmentation.create_zoom_image(zoom_image_path, count=image_count)
+
+# 生成增强图片
+image_count = int(input("要生成的图片数量（整数）："))
+
+for path, trans in zip(paths, trans_type):
+    if trans == 'crop':
+        DataAugmentation.create_cropped_image(path, count=image_count)
+    elif trans == 'color_vibrance':
+        DataAugmentation.create_color_vibrance_image(path, count=image_count)
+    elif trans == 'rotate':
+        DataAugmentation.create_rotate_image(path, count=image_count)
+    elif trans == 'shift':
+        DataAugmentation.create_shift_image(path, count=image_count)
+    elif trans == 'zoom':
+        DataAugmentation.create_zoom_image(path, count=image_count)
 

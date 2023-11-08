@@ -5,7 +5,7 @@ import os
 
 root = "D:/Project/MyProjects/FeatureExtraction/python"
 dataset = f"{root}/dataset/"
-results = f"{root}/results.txt"
+results = f"{root}/results1k.txt"
 
 
 def getFiles(directory_path):
