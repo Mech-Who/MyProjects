@@ -1,21 +1,48 @@
+import os
 import cv2
-import matplotlib as plt
+import numpy as np
+from utils import getFiles
 
-img_path = '../../img/ch3_img1.jpg'
-img = cv2.imread(img_path)
-img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-h, w, _ = img.shape
-new_h1, new_h2 = np.random.randint(0, h-512, 2)
-new_w1, new_w2 = np.random.randint(0, w-512, 2)
-img_crop1 = img[new_h1:new_h1+512, new_w1:new_w1+512, :]
-img_crop2 = img[new_h2:new_h2+512, new_w2:new_w2+512, :]
+def random_crop(image, crop_size):
+    height, width = image.shape[:2]
+    crop_height, crop_width = crop_size
+    if crop_width >= width or crop_height >= height:
+        raise ValueError("Crop size should be smaller than image size")
+    x = np.random.randint(0, width - crop_width + 1)
+    y = np.random.randint(0, height - crop_height + 1)
+    cropped_image = image[y:y+crop_height, x:x+crop_width]
+    return cropped_image# 读取图像
 
-# 显示
-plt.figure(figsize=(15, 10))
-plt.subplot(1,3,1), plt.imshow(img)
-plt.axis('off'); plt.title('原图')
-plt.subplot(1,3,2), plt.imshow(img_crop1)
-plt.axis('off'); plt.title('水平镜像')
-plt.subplot(1,3,3), plt.imshow(img_crop2)
-plt.axis('off'); plt.title('垂直镜像')
-plt.show()
+
+def create_cropped_image(image_path, subdirname=None, crop_size=(200, 200), count=1):
+    """
+    image_path: 图片目录
+    subdirname: 子目录名称
+    crop_size: 裁剪尺寸
+    count: 生成图片的数量
+    """
+    # 获取图片路径
+    image_path = os.path.abspath(image_path)
+    files = getFiles(image_path)
+    for img_path in files:
+        # 调整原图片大小
+        image = cv2.imread(img_path)
+        image = cv2.resize(image,(1024,800))
+        # 随机裁剪到固定大小
+        for i in range(count):
+            cropped_image = random_crop(image, crop_size)# 显示原始图像和裁剪后的图像
+            # 保存图片
+            filename = img_path.split("\\")[-1].split('.')[0]
+            new_filename = filename + f'_crop{i+1:03d}.jpg'
+            if subdirname:
+                new_img_path = os.path.join(image_path, subdirname, new_filename)
+            else:
+                new_img_path = os.path.join(image_path, new_filename)
+            print(f"{new_img_path} has saved!")
+            cv2.imwrite(new_img_path, cropped_image)
+
+
+if __name__ == "__main__":
+    image_path = r"./DataAugmentation/TestImage/"
+    create_cropped_image(image_path, None, crop_size=(200, 200), count=2)
+    create_cropped_image(image_path, "crop", crop_size=(200, 200), count=2)

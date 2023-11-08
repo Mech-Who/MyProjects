@@ -1,7 +1,11 @@
 # 去除黑边的操作
+import os
 import cv2
-import matplotlib as plt
+import random
+import matplotlib.pyplot as plt
 import numpy as np
+
+from utils import getFiles
 
 crop_image = lambda img, x0, y0, w, h: img[y0:y0+h, x0:x0+w]  # 定义裁切函数，后续裁切黑边使用
 
@@ -47,35 +51,34 @@ def rotate_image(img, angle, crop):
         img_rotated = crop_image(img_rotated, x0, y0, w_crop, h_crop)
     return img_rotated
 
+def create_rotate_image(image_path, subdirname=None, count=1):
+    image_path = os.path.abspath(image_path)
+    files = getFiles(image_path)
+    for img_path in files:
+        img = cv2.imread(img_path)
+        for i in range(count):
+            # 随机旋转度数
+            degree = random.randint(0, 360)
+            # 无黑边旋转
+            nonblack_image_rotated = rotate_image(img, degree, True)
+            # 有黑边旋转
+            black_image_rotated = rotate_image(img, degree, False)
+            # 保存图片
+            filename = img_path.split("\\")[-1].split('.')[0]
+            new_black_filename = filename + f'_black{degree:03d}rotate{i+1:03d}.jpg'
+            new_nonblack_filename = filename + f'_nonblack{degree:03d}rotate{i+1:03d}.jpg'
+            if subdirname:
+                new_black_img_path = os.path.join(image_path, subdirname, new_black_filename)
+                new_nonblack_img_path = os.path.join(image_path, subdirname, new_nonblack_filename)
+            else:
+                new_black_img_path = os.path.join(image_path, new_black_filename)
+                new_nonblack_img_path = os.path.join(image_path, new_nonblack_filename)
+            print(f"{new_black_img_path} has saved!")
+            print(f"{new_nonblack_img_path} has saved!")
+            # cv2.imwrite(new_black_img_path, black_image_rotated)
+            # cv2.imwrite(new_nonblack_img_path, nonblack_image_rotated)
 
-#水平镜像
-h_flip = cv2.flip(img,1)
-#垂直镜像
-v_flip = cv2.flip(img,0)
-#水平垂直镜像
-hv_flip = cv2.flip(img,-1)
-#90度旋转
-rows, cols, _ = img.shape
-M = cv2.getRotationMatrix2D((cols/2, rows/2), 45, 1)
-rotation_45 = cv2.warpAffine(img, M, (cols, rows))
-#45度旋转
-M = cv2.getRotationMatrix2D((cols/2, rows/2), 135, 2)
-rotation_135 = cv2.warpAffine(img, M,(cols, rows))
-#去黑边旋转45度
-image_rotated = rotate_image(img, 45, True)
-
-#显示
-plt.figure(figsize=(15, 10))
-plt.subplot(2,3,1), plt.imshow(img)
-plt.axis('off'); plt.title('原图')
-plt.subplot(2,3,2), plt.imshow(h_flip)
-plt.axis('off'); plt.title('水平镜像')
-plt.subplot(2,3,3), plt.imshow(v_flip)
-plt.axis('off'); plt.title('垂直镜像')
-plt.subplot(2,3,4), plt.imshow(hv_flip)
-plt.axis('off'); plt.title('水平垂直镜像')
-plt.subplot(2,3,5), plt.imshow(rotation_45)
-plt.axis('off'); plt.title('旋转45度')
-plt.subplot(2,3,6), plt.imshow(image_rotated)
-plt.axis('off'); plt.title('去黑边旋转45度')
-plt.show()
+if __name__ == "__main__":
+    image_path = r"./DataAugmentation/TestImage"
+    create_rotate_image(image_path, "rotate", 2)
+    create_rotate_image(image_path, None, 2)
