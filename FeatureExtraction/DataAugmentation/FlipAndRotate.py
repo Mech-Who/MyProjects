@@ -14,13 +14,13 @@ def rotate_image(img, angle, crop):
     angle: 旋转的角度
     crop: 是否需要进行裁剪，布尔向量
     """
-    w, h = img.shape[:2]
+    h, w = img.shape[:2]
     # 旋转角度的周期是360°
     angle %= 360
     # 计算仿射变换矩阵
-    M_rotation = cv2.getRotationMatrix2D((w / 2, h / 2), angle, 1)
+    M_rotation = cv2.getRotationMatrix2D((h / 2, w / 2), angle, 1)
     # 得到旋转后的图像
-    img_rotated = cv2.warpAffine(img, M_rotation, (w, h))
+    img_rotated = cv2.warpAffine(img, M_rotation, (h, w))
 
     # 如果需要去除黑边
     if crop:
