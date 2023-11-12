@@ -18,7 +18,25 @@
     },{
       "path": "./FeatureExtraction"
     },{
-      "path": "../get_tickets"
+      "path": "../get_tickets",
+      "name": "爬虫项目"
+    },{
+      "path": "../Learn",
+      "name": "Learn根目录"
+    },{
+      "path": "../Learn/AlgorithmLearn"
+    },{
+      "path": "../Learn/cLearn"
+    },{
+      "path": "../Learn/cppLearn"
+    },{
+      "path": "../Learn/goLearn"
+    },{
+      "path": "../Learn/javaLearn"
+    },{
+      "path": "../Learn/jsLearn"
+    },{
+      "path": "../Learn/pythonLearn"
     }
   ],
   "settings": {
