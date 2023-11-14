@@ -26,6 +26,8 @@
     },{
       "path": "./FeatureExtraction"
     },{
+      "path": "./KaggleIdentifyContrails"
+    },{
       "path": "../get_tickets",
       "name": "爬虫项目"
     },{
