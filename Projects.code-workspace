@@ -18,6 +18,14 @@
     },{
       "path": "./FeatureExtraction"
     },{
+      "path": "./Knowledge/knowledge",
+      "name": "Knowledge_back"
+    },{
+      "path": "./Knowledge/knowledge_front",
+      "name": "Knowledge_front"
+    },{
+      "path": "./FeatureExtraction"
+    },{
       "path": "../get_tickets",
       "name": "爬虫项目"
     },{
