@@ -1,8 +1,8 @@
-#! pip install nerf-pytorch
+##! pip install nerf-pytorch
 import torch
 import nerf
 
-model = nerf.models.NeRF()
+model = nerf.model.NeRF()
 
 x = torch.randn(10, 3)  # 10 samples with 3 features each
 y = model(x)
