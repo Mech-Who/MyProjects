@@ -9,3 +9,6 @@ get_tickets
 *.exe
 
 # file
+
+# project
+Algorithm/*
