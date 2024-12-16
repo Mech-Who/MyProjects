@@ -2,6 +2,15 @@ import sys
 import sqlite3
 from typing import Dict, List
 
+from sqlmodel import SQLModel, create_engine
+
+from .config import ReadConfig
+
+config = ReadConfig()
+engine = create_engine(f"sqlite:///{config['database']['name']}", echo=True)
+
+def create_db_and_tables():
+    SQLModel.metadata.create_all(engine)
 
 class ConnectionPool(object):
     

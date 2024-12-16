@@ -2,3 +2,5 @@ database:
   name: favorsys.db
   username: root
   password: 123456
+
+date_format: "%Y-%m-%d"

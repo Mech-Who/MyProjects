@@ -1,3 +1,12 @@
+<!--
+ * @Author: hushuhan 873933169@qq.com
+ * @Date: 2024-12-10 23:06:25
+ * @LastEditors: hushuhan 873933169@qq.com
+ * @LastEditTime: 2024-12-16 23:47:26
+ * @FilePath: \FavorSystem\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
 # FavorSys
 
 ## Run
@@ -21,6 +30,7 @@ uvicorn main:app --host 0.0.0.0 --port 80 --reload
 - fastapi / "fastapi[all]" (包括所有插件)
 - "uvicorn[standard]"
 - pydantic
+- sqlmodel
 
 fastapi 插件包括：
 
