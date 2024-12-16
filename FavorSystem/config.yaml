@@ -1,0 +1,4 @@
+database:
+  name: favorsys.db
+  username: root
+  password: 123456
