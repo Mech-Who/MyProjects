@@ -4,7 +4,7 @@ from typing import Dict, List
 
 from sqlmodel import SQLModel, create_engine
 
-from .config import ReadConfig
+from config import ReadConfig
 
 config = ReadConfig()
 engine = create_engine(f"sqlite:///{config['database']['name']}", echo=True)

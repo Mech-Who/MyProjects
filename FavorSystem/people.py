@@ -12,9 +12,9 @@ from database import engine, create_db_and_tables
 create_db_and_tables()
 
 config = ReadConfig()
-people = FastAPI()
+people_api = FastAPI()
 
-@people.get("/")
+@people_api.get("/")
 def list_all():
     with Session(engine) as session:
         statement = select(People).limit(20)
@@ -22,24 +22,27 @@ def list_all():
         print(peoples)
         return { "people_list": peoples }
 
-@people.post("/create")
-def create_people(people_list):
+@people_api.post("/create")
+def create_people(people_list: List[Dict]):
     """
     add a bunch of people to database
     """
     with Session(engine) as session:
+        p_list = []
         for people in people_list:
-            p = People(people["name"],
-                       datetime.strptime(people["birthday"], config["date_format"]),
-                       people["gender"],
-                       people["favor"])
+            p = People(name=people["name"],
+                       birthday=datetime.strptime(people["birthday"], config["date_format"]),
+                       gender=people["gender"],
+                       favor=people["favor"])
+            p_list.append(p)
             session.add(p)
-            session.refresh(p)
         session.commit()
+        for p in p_list:
+            session.refresh(p)
         print(f"[INFO] Create {len(people_list)} people.")
         return { "status": 200 }
 
-@people.post("/delete")
+@people_api.post("/delete")
 def delete_people(id_list):
     with Session(engine) as session:
         for id in id_list:
@@ -49,7 +52,7 @@ def delete_people(id_list):
         print(f"[INFO] Delete {len(id_list)} people.")
         return { "status": 200 }
 
-@people.post("/modify")
+@people_api.post("/modify")
 def modify_people(people_list):
     with Session(engine) as session:
         for people in people_list:
@@ -59,7 +62,7 @@ def modify_people(people_list):
     print(f"[INFO] Update {len(people_list)} people.")
     return { "status": 200 }
 
-@people.post("/list")
+@people_api.post("/list")
 def list_people(id=None, name=None,
                 start_birthday=None,
                 end_birthday=None,

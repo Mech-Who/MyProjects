@@ -1,3 +1,11 @@
+'''
+Author: hushuhan 873933169@qq.com
+Date: 2024-12-10 23:03:36
+LastEditors: hushuhan 873933169@qq.com
+LastEditTime: 2024-12-16 23:50:41
+FilePath: \FavorSystem\main.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 
 from fastapi import FastAPI
 from fastapi import Form, File, UploadFile
@@ -6,11 +14,11 @@ from fastapi import HTTPException
 from fastapi.responses import RedirectResponse, JSONResponse
 from pydantic import BaseModel, Field
 
-from people import people
+from people import people_api
 
 app = FastAPI()
 
-app.mount("/people", people)
+app.mount("/people", people_api)
 
 class Item(BaseModel):
     name: str = Field(..., title="Item Name", max_length=100)
