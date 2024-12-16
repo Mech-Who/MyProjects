@@ -1,1 +1,8 @@
+# folder / directory
 __pycache__/
+
+# type
+*.db
+
+# file
+test.py
