@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>About</h1>
+  <div class="event">
+    <h4>Event View</h4>
   </div>
 </template>
 

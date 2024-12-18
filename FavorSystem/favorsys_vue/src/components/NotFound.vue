@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>About</h1>
+  <div class="404">
+    <h4>404 Not Found!</h4>
   </div>
 </template>
 
