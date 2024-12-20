@@ -12,8 +12,56 @@ from typing import Optional
 from sqlmodel import Field, SQLModel
 
 class People(SQLModel, table=True):
+    """
+    Entity
+    """
     id: Optional[int] = Field(default=None, primary_key=True, )
     name: str
     birthday: date = Field(default=None)
     gender: int
     favor: float = 0.0
+
+class PeopleParam(SQLModel, tabel=True):
+    """
+    Relation
+    """
+    id: Optional[int] = Field(default=None, primary_key=True, )
+    people_id: int
+    param_key: str
+    param_value: str
+
+class Event(SQLModel, table=True):
+    """
+    Entity
+    """
+    id: Optional[int] = Field(default=None, primary_key=True, )
+    owner_id: int # 事件拥有者
+    event_date: date = Field(default=None) # 事件发生时间
+    title: str
+    description: str
+    favor_effect: float
+
+class EventRelatedPeople(SQLModel, table=True):
+    """
+    Relation
+    """
+    id: Optional[int] = Field(default=None, primary_key=True, )
+    event_id: int
+    related_id: int
+
+class EventRelatedEvent(SQLModel, table=True):
+    """
+    Relation
+    """
+    id: Optional[int] = Field(default=None, primary_key=True, )
+    event_id: int
+    related_id: int
+
+class EventParam(SQLModel, tabel=True):
+    """
+    Relation
+    """
+    id: Optional[int] = Field(default=None, primary_key=True, )
+    event_id: int
+    param_key: str
+    param_value: str

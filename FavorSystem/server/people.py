@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 from sqlmodel import Session, SQLModel, create_engine, select, delete, update
 
 from config import ReadConfig
-from entity import People
+from entity import People, PeopleParam
 from database import engine, create_db_and_tables
 
 create_db_and_tables()
@@ -15,7 +15,7 @@ config = ReadConfig()
 people_api = FastAPI()
 
 @people_api.get("/")
-def list_all():
+def list_all_people():
     with Session(engine) as session:
         statement = select(People).limit(20)
         peoples = session.exec(statement).all()
@@ -39,7 +39,9 @@ def create_people(people_list: List[Dict]):
         session.commit()
         for p in p_list:
             session.refresh(p)
-        print(f"[INFO] Create {len(people_list)} people.")
+        people_count = len(people_list)
+        suffix = 's' if people_count > 1 else ''
+        print(f"[INFO] Create {people_count} people{suffix}.")
         return { "status": 200 }
 
 @people_api.post("/delete")
@@ -49,7 +51,9 @@ def delete_people(id_list):
             statement = delete(People).where(People.id == id)
             people_count = session.exec(statement).first()
         session.commit()
-        print(f"[INFO] Delete {len(id_list)} people.")
+        people_count = len(id_list)
+        suffix = "s" if people_count > 1 else ""
+        print(f"[INFO] Delete {len(id_list)} people{suffix}.")
         return { "status": 200 }
 
 @people_api.post("/modify")
@@ -61,6 +65,18 @@ def modify_people(people_list):
         session.commit()
     print(f"[INFO] Update {len(people_list)} people.")
     return { "status": 200 }
+
+@people_api.post("/add_param")
+def add_people_param():
+    pass
+
+@people_api.post("/modify_param")
+def modify_people_param():
+    pass
+
+@people_api.post("/remove_param")
+def remove_people_param():
+    pass
 
 @people_api.post("/list")
 def list_people(id=None, name=None,
@@ -74,11 +90,13 @@ def list_people(id=None, name=None,
         if name:
             statement = statement.where(People.name == name)
         if start_birthday:
-            statement = statement.where(People.birthday)
+            start = datetime.strptime(start_birthday, config["date_format"])
+            statement = statement.where(People.birthday > start)
         if end_birthday:
-            statement = statement.where(People.birthday)
+            end = datetime.strptime(end_birthday, config["date_format"])
+            statement = statement.where(People.birthday < end)
         if gender:
-            statement = statement.where(People.gender)
+            statement = statement.where(People.gender == gender)
         if favor:
             statement = statement.where(People.favor == favor)
         peoples = session.exec(statement).all()
