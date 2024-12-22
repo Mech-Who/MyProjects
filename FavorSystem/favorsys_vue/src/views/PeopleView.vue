@@ -148,7 +148,7 @@ import { onMounted, computed, ref, reactive } from "vue";
 import { useRouter } from "vue-router";
 import { People } from "../entities/entity";
 import { ElMessage } from "element-plus";
-import type { FormInstance, FormRules } from "element-plus";
+import type { FormRules } from "element-plus";
 import fsRequest from "@/service";
 
 const router = useRouter();
@@ -371,10 +371,6 @@ let peopleData = ref([
 ]);
 
 interface IResponseData {
-  args: any;
-  headers: any;
-  origin: string;
-  url: string;
   people_list: [];
   total_page: number;
   current_page: number;

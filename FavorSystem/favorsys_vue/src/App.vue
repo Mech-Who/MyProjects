@@ -17,15 +17,7 @@
   </el-container>
 </template>
 
-<script lang="ts" setup>
-import { ref } from "vue";
-import { useRouter, useRoute } from "vue-router";
-
-const router = useRouter();
-const route = useRoute();
-
-let currentMenu = route.name;
-</script>
+<script lang="ts" setup></script>
 
 <style lang="less">
 #app {

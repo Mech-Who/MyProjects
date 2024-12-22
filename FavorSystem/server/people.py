@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 from sqlmodel import Session, SQLModel, create_engine, select, delete, update
 
 from config import ReadConfig
-from entity import People, PeopleParam
+from entity import People, PeopleParam, Event
 from database import engine, create_db_and_tables
 
 create_db_and_tables()
@@ -14,9 +14,43 @@ create_db_and_tables()
 config = ReadConfig()
 people_api = FastAPI()
 
+"""
+Query Form
+"""
+
 class PageQuery(BaseModel):
     page_size: int # 一页有多少条
     page_num: int   # 第几页
+
+class PeopleCreateQuery(BaseModel):
+    id: int|None = Field(default=None)
+    name: str|None = Field(default=None)
+    birthday: str|None = Field(default=None)
+    gender: int|None = Field(default=None)
+    favor: float|None = Field(default=None)
+
+class PeopleDeleteQuery(BaseModel):
+    id: int|None = Field(default=None)
+
+class PeopleUpdateQuery(BaseModel):
+    id: int|None = Field(default=None)
+    name: str|None = Field(default=None)
+    birthday: str|None = Field(default=None)
+    startDate: str|None = Field(default=None)
+    endDate: str|None = Field(default=None)
+    gender: int|None = Field(default=None)
+    favor: float|None = Field(default=None)
+
+class PeopleInfoQuery(BaseModel):
+    id: int|None = Field(default=None)
+    name: str|None = Field(default=None)
+    birthday: str|None = Field(default=None)
+    gender: int|None = Field(default=None)
+    favor: float|None = Field(default=None)
+
+"""
+People
+"""
 
 @people_api.post("/list")
 def list_people(page: PageQuery):
@@ -44,7 +78,7 @@ def people_count():
     return people_count
 
 @people_api.post("/create")
-def create_people(people_list: List[People]):
+def create_people(people_list: List[PeopleCreateQuery]):
     """
     add a bunch of people to database
     """
@@ -67,7 +101,7 @@ def create_people(people_list: List[People]):
     return { "status": 200 }
 
 @people_api.post("/delete")
-def delete_people(people_list: List[People]):
+def delete_people(people_list: List[PeopleDeleteQuery]):
     with Session(engine) as session:
         for people in people_list:
             # 真的删除
@@ -82,15 +116,47 @@ def delete_people(people_list: List[People]):
         print(f"[INFO] Delete {len(people_list)} people{suffix}.")
         return { "status": 200 }
 
-@people_api.post("/modify")
-def modify_people(people_list):
+@people_api.post("/update")
+def update_people(people_list: List[PeopleUpdateQuery]):
     with Session(engine) as session:
         for people in people_list:
             statement = update(People).where(People.id == people["id"])
+            if people.id:
+                statement.values(id=people.id)
+            # TBD: 其他属性
             update_count = session.exec(statement).first()
         session.commit()
     print(f"[INFO] Update {len(people_list)} people.")
     return { "status": 200 }
+
+@people_api.post("/get_info")
+def get_people_info(people: PeopleInfoQuery):
+    with Session(engine) as session:
+        statement = select(People).where(People.removed == 0)
+        if people.id:
+            statement = statement.where(People.id == people.id)
+        if people.name:
+            statement = statement.where(People.name == people.name)
+        if people.birthday:
+            statement = statement.where(People.birthday == people.birthday)
+        if people.favor:
+            statement = statement.where(People.favor == people.favor)
+        people_info = session.exec(statement).first()
+        # 非空查询则event
+        if people_info:
+            statement = select(Event).where(Event.removed == 0)\
+                        .where(Event.owner_id == people_info.id)
+            events = session.exec(statement).all()
+    result = { key: value for key, value in people_info.model_dump().items() if key != "removed"}
+    result["latest_event"] = [{key: value for key, value in event.model_dump().items() if key != "removed"} for event in events]
+    # 以下三种方式均可
+    return result # 纯dict，自定义更方便
+    # return people_info # 纯BaseModel
+    # return { **people_info.model_dump(), "latest_event": events } # 半BaseModel，半dict
+
+"""
+People Param
+"""
 
 @people_api.post("/add_param")
 def add_people_param():
