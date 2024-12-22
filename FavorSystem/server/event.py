@@ -3,10 +3,10 @@ from typing import List, Tuple, Dict, Iterable, Optional
 
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
-from sqlmodel import Session, SQLModel, create_engine, select, delete, update
+from sqlmodel import Session, SQLModel, create_engine, select, delete, update, or_
 
 from config import ReadConfig
-from entity import Event, EventParam
+from entity import Event, EventParam, EventRelatedEvent, EventRelatedPeople
 from database import engine, create_db_and_tables
 
 create_db_and_tables()
@@ -22,12 +22,19 @@ def list_all_event(id=None, title=None,
                 start_date=None,
                 end_date=None,
                 description=None, favor_effect=None):
+    """
+    TBD: 多表联查，根据各种条件进行筛选，供首页使用
+    """
     with Session(engine) as session:
-        statement = select(Event)
+        statement = select(Event, EventRelatedPeople)\
+            .join_from(Event.c.id == EventRelatedPeople.c.event_id)\
+            # .join_from()
         if id:
             statement = statement.where(Event.id == id)
         if owner_id:
             statement = statement.where(Event.owner_id == owner_id)
+        if related_people_id:
+            statement = statement.where(Event.owner_id == related_people_id)
         if title:
             statement = statement.where(Event.title == title)
         if start_date:
@@ -71,7 +78,11 @@ def create_event(event_list: List[Dict]):
 def delete_event(id_list):
     with Session(engine) as session:
         for id in id_list:
-            statement = delete(Event).where(Event.id == id)
+            # 真的删除
+            # statement = delete(Event).where(Event.id == id)
+            # 标记删除
+            statement = update(Event).where(Event.id == id)\
+                        .values(removed=1)
             people_count = session.exec(statement).first()
         session.commit()
         event_count = len(id_list)

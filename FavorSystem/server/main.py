@@ -12,6 +12,7 @@ from fastapi import Form, File, UploadFile
 from fastapi import Header, Cookie, Query, Depends
 from fastapi import HTTPException
 from fastapi.responses import RedirectResponse, JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from people import people_api
@@ -19,6 +20,23 @@ from people import people_api
 app = FastAPI()
 
 app.mount("/people", people_api)
+
+# 设置允许的源
+origins = [
+    "http://example.com",
+    "https://example.com",
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+# 添加 CORS 中间件
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # 允许的源
+    allow_credentials=True,
+    allow_methods=["*"],  # 允许的方法
+    allow_headers=["*"],  # 允许的头
+)
 
 class Item(BaseModel):
     name: str = Field(..., title="Item Name", max_length=100)
